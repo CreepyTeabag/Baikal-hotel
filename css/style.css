@@ -1,0 +1,35 @@
+body {
+  background-color: #fff;
+  font-family: "Open Sans", sans-serif;
+  padding: 24px;
+  margin: 0;
+}
+
+.menu {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 27px;
+}
+.menu-logo {
+  margin-bottom: -6px;
+}
+.menu-logo img {
+  max-width: 108px;
+}
+.menu-hamburger {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.square {
+  width: 7px;
+  height: 7px;
+  background-color: #2F70D9;
+  box-shadow: 11px 0 0 0 #2F70D9, 0 11px 0 0 #2F70D9, 11px 11px 0 0 #2F70D9;
+  border: 0.5px solid #2F70D9;
+  border-radius: 1px;
+}/*# sourceMappingURL=style.css.map */
