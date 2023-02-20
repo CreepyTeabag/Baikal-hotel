@@ -5,7 +5,7 @@ body {
   margin: 0;
 }
 
-.menu {
+.header {
   height: 50px;
   width: 100%;
   display: flex;
@@ -13,23 +13,26 @@ body {
   align-items: flex-end;
   height: 27px;
 }
-.menu-logo {
+.header-logo {
   margin-bottom: -6px;
 }
-.menu-logo img {
+.header-logo img {
   max-width: 108px;
 }
-.menu-hamburger {
-  display: block;
-  width: 20px;
-  height: 20px;
+.header-hamburger {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-flow: row wrap;
+  width: 22px;
+  height: 22px;
+  margin-bottom: -1px;
 }
 
 .square {
-  width: 7px;
-  height: 7px;
+  width: 9px;
+  height: 9px;
   background-color: #2F70D9;
-  box-shadow: 11px 0 0 0 #2F70D9, 0 11px 0 0 #2F70D9, 11px 11px 0 0 #2F70D9;
-  border: 0.5px solid #2F70D9;
   border-radius: 1px;
+  margin: 1px;
 }/*# sourceMappingURL=style.css.map */
