@@ -1,11 +1,42 @@
 body {
   background-color: #fff;
   font-family: "Open Sans", sans-serif;
-  padding: 24px;
+  padding: 0;
   margin: 0;
 }
 
+.container {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.button-book {
+  border: none;
+  background: #D95845;
+  color: #fff;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+.button-book__big {
+  width: 180px;
+  height: 60px;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
 .header {
+  padding-top: 15px;
+  padding-bottom: 15px;
   height: 50px;
   width: 100%;
   display: flex;
@@ -35,4 +66,57 @@ body {
   background-color: #2F70D9;
   border-radius: 1px;
   margin: 1px;
+}
+
+.main {
+  padding-top: 40px;
+}
+.main-header {
+  width: 83%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-content: flex-end;
+}
+.main-header-hotel {
+  margin-bottom: -28px;
+  color: #686868;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 13px;
+  text-align: right;
+}
+.main-header-hotel::before {
+  content: "";
+  margin-bottom: 2px;
+  display: block;
+  position: relative;
+  left: 45px;
+  width: 39px;
+  height: 5px;
+  background: url(../img/line-soft-bold.webp) right no-repeat;
+  background-size: contain;
+}
+.main-header-baikal {
+  color: #2F70D9;
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 77px;
+  letter-spacing: 0.03em;
+}
+.main-description {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 141.18%;
+  color: #686868;
+}
+.main-img {
+  margin-top: 30px;
+}
+.main-img img {
+  max-width: 100%;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,45 @@
+.main
+  padding-top: 40px
+  &-header
+    width: 83%
+    display: flex
+    flex-flow: column wrap
+    justify-content: flex-end
+    align-items: flex-end
+    align-content: flex-end
+    &-hotel
+      margin-bottom: -28px
+      color: $dark-grey
+      text-transform: uppercase
+      font-weight: 800
+      font-size: 13px
+      text-align: right
+      &::before
+        content: ''
+        margin-bottom: 2px
+        display: block
+        position: relative
+        left: 45px
+        width: 39px
+        height: 5px
+        background: url(../img/line-soft-bold.webp) right no-repeat
+        background-size: contain
+
+    &-baikal
+      color: $main-color
+      font-family: 'Lora'
+      font-style: normal
+      font-weight: 700
+      font-size: 60px
+      line-height: 77px
+      letter-spacing: 0.03em
+  &-description
+    margin-bottom: 20px
+    font-weight: 400
+    font-size: 13px
+    line-height: 141.18%
+    color: #686868
+  &-img
+    margin-top: 30px
+    img
+      max-width: 100%
