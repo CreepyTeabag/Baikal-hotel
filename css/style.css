@@ -102,7 +102,7 @@ body {
   flex-flow: column wrap;
   justify-content: flex-end;
   align-items: flex-end;
-  align-content: flex-end;
+  align-content: flex-start;
 }
 .main-header-hotel {
   margin-bottom: -28px;
@@ -155,9 +155,12 @@ body {
   .main-block {
     max-width: 380px;
   }
+  .main-img {
+    min-width: 300px;
+    max-width: 450px;
+  }
   .main-img img {
-    min-width: 220px;
-    max-width: 400px;
+    width: 100%;
   }
 }
 @media (min-width: 769px) {
@@ -172,30 +175,50 @@ body {
     align-items: flex-start;
     align-content: flex-start;
   }
-  .main-block-header {
+  .main-header {
     width: 100%;
   }
+  .main-header-hotel {
+    margin-bottom: -30px;
+    font-size: 17px;
+  }
+  .main-header-hotel::before {
+    margin-bottom: 0;
+    left: 65px;
+  }
+  .main-header-baikal {
+    font-size: 80px;
+    line-height: 105px;
+  }
+  .main-description {
+    font-size: 16px;
+  }
   .main-img img {
-    max-width: 500px;
+    max-width: 450px;
   }
 }
 @media (min-width: 993px) {
-  .main-header {
-    width: 496px;
+  .main-header-hotel {
+    margin-bottom: -50px;
+    font-size: 24px;
   }
-  .main-header-hotels {
-    align-items: center;
-    align-content: center;
+  .main-header-hotel::before {
+    left: 120px;
   }
   .main-header-baikal {
     margin-bottom: 6px;
-    font-size: 80px;
-    line-height: 100px;
+    font-size: 131px;
+    line-height: 168px;
   }
   .main-description {
     margin-bottom: 40px;
     font-size: 16px;
   }
+  .main-img img {
+    max-width: 450px;
+  }
+}
+@media (min-width: 1140px) {
   .main-img img {
     max-width: 602px;
   }
