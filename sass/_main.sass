@@ -1,7 +1,12 @@
 .main
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: flex-start
+  align-content: flex-start
   padding-top: 40px
   &-header
-    width: 83%
+    width: 227px
     display: flex
     flex-flow: column wrap
     justify-content: flex-end
@@ -22,9 +27,8 @@
         left: 45px
         width: 39px
         height: 5px
-        background: url(../img/line-soft-bold.webp) right no-repeat
+        background: url(../assets/img/line-soft-bold.webp) right no-repeat
         background-size: contain
-
     &-baikal
       color: $main-color
       font-family: 'Lora'
@@ -34,6 +38,7 @@
       line-height: 77px
       letter-spacing: 0.03em
   &-description
+    width: 100%
     margin-bottom: 20px
     font-weight: 400
     font-size: 13px
@@ -43,3 +48,58 @@
     margin-top: 30px
     img
       max-width: 100%
+
+@media ( min-width: 541px )
+  .main
+    flex-direction: row
+    align-items: center
+    &-block
+      max-width: 380px
+    &-img
+      img
+        min-width: 220px
+        max-width: 400px
+  
+@media ( min-width: 769px )
+  .main
+    justify-content: center
+    &-block
+      max-width: 496px
+      display: flex
+      flex-flow: column wrap
+      justify-content: center
+      align-items: flex-start
+      align-content: flex-start
+      &-header
+        width: 100%
+    &-img
+      img
+        max-width: 500px
+
+@media ( min-width: 993px )
+  .main
+    // &-block
+    &-header
+      width: 496px
+      &-hotels
+        align-items: center
+        align-content: center
+      &-baikal
+        margin-bottom: 6px
+        font-size: 80px
+        line-height: 100px
+    &-description
+      margin-bottom: 40px
+      font-size: 16px
+    &-img
+      img
+        max-width: 602px
+
+// @media ( min-width: 1140px )
+//   .main
+//     &-header
+//       &-hotel
+//         &::before
+//       &-baikal
+//         font-size: 77px
+//         line-height: 100px

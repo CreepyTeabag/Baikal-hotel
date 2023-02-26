@@ -10,6 +10,12 @@ body {
   margin-right: 24px;
 }
 
+@media (min-width: 1201px) {
+  .container {
+    max-width: 1100px;
+    margin: auto;
+  }
+}
 .button {
   display: flex;
   justify-content: center;
@@ -20,11 +26,17 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
+.button:hover {
+  cursor: pointer;
+}
 .button-book {
   border: none;
   background: #D95845;
   color: #fff;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+.button-book:hover {
+  background-color: #dd6b5a;
 }
 .button-book__big {
   width: 180px;
@@ -34,6 +46,14 @@ body {
   line-height: 22px;
 }
 
+@media (min-width: 993px) {
+  .button-book__big {
+    width: 285px;
+    height: 65px;
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
 .header {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -69,10 +89,15 @@ body {
 }
 
 .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
   padding-top: 40px;
 }
 .main-header {
-  width: 83%;
+  width: 227px;
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-end;
@@ -95,7 +120,7 @@ body {
   left: 45px;
   width: 39px;
   height: 5px;
-  background: url(../img/line-soft-bold.webp) right no-repeat;
+  background: url(../assets/img/line-soft-bold.webp) right no-repeat;
   background-size: contain;
 }
 .main-header-baikal {
@@ -108,6 +133,7 @@ body {
   letter-spacing: 0.03em;
 }
 .main-description {
+  width: 100%;
   margin-bottom: 20px;
   font-weight: 400;
   font-size: 13px;
@@ -119,4 +145,58 @@ body {
 }
 .main-img img {
   max-width: 100%;
+}
+
+@media (min-width: 541px) {
+  .main {
+    flex-direction: row;
+    align-items: center;
+  }
+  .main-block {
+    max-width: 380px;
+  }
+  .main-img img {
+    min-width: 220px;
+    max-width: 400px;
+  }
+}
+@media (min-width: 769px) {
+  .main {
+    justify-content: center;
+  }
+  .main-block {
+    max-width: 496px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+  .main-block-header {
+    width: 100%;
+  }
+  .main-img img {
+    max-width: 500px;
+  }
+}
+@media (min-width: 993px) {
+  .main-header {
+    width: 496px;
+  }
+  .main-header-hotels {
+    align-items: center;
+    align-content: center;
+  }
+  .main-header-baikal {
+    margin-bottom: 6px;
+    font-size: 80px;
+    line-height: 100px;
+  }
+  .main-description {
+    margin-bottom: 40px;
+    font-size: 16px;
+  }
+  .main-img img {
+    max-width: 602px;
+  }
 }/*# sourceMappingURL=style.css.map */

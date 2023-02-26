@@ -7,14 +7,25 @@
    font-weight: 700
    text-align: center
    letter-spacing: 0.03em
+   &:hover
+      cursor: pointer
    &-book
       border: none
       background: $main-red
       color: $text-color-white
       box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1)
+      &:hover
+         background-color: lighten($main-red, 5%)
       &__big
          width: 180px
          height: 60px
          border-radius: 10px
          font-size: 16px
          line-height: 22px
+
+@media ( min-width: 993px )
+   .button-book__big
+      width: 285px
+      height: 65px
+      font-size: 22px
+      line-height: 30px
