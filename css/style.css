@@ -47,6 +47,36 @@ body {
   line-height: 22px;
 }
 
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.section-title {
+  margin-bottom: 30px;
+  color: #2F70D9;
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  letter-spacing: 0.03em;
+}
+.section-title::before {
+  content: "";
+  margin-bottom: -10px;
+  display: block;
+  position: relative;
+  left: 140px;
+  width: 60px;
+  height: 7px;
+  background: url(../assets/img/header-soft-grey-line.webp) right no-repeat;
+  background-size: contain;
+}
+
 .description {
   width: 100%;
   max-width: 390px;
@@ -60,27 +90,40 @@ body {
   max-width: 100%;
 }
 
-.row {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  align-content: flex-start;
-}
-
 @media (min-width: 541px) {
   .row {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
+  .section-title {
+    font-size: 35px;
+    line-height: 44px;
+  }
+  .section-title::before {
+    left: 173px;
+  }
+  .section-img {
+    min-width: 300px;
+    max-width: 450px;
+  }
+  .section-img img {
+    width: 100%;
+  }
 }
 @media (min-width: 769px) {
-  .row {
-    justify-content: center;
+  .section-title {
+    font-size: 45px;
+    line-height: 52px;
+  }
+  .section-title::before {
+    left: 240px;
   }
   .description {
     font-size: 16px;
+  }
+  .section-img {
+    max-width: 600px;
   }
 }
 @media (min-width: 993px) {
@@ -89,6 +132,25 @@ body {
     height: 65px;
     font-size: 22px;
     line-height: 30px;
+  }
+  .section-title {
+    margin-bottom: 65 px;
+    font-size: 50px;
+    line-height: 64px;
+  }
+  .section-title::before {
+    left: 206px;
+    width: 130px;
+    height: 11px;
+    background: url(../assets/img/line-sharp.webp) right no-repeat;
+  }
+  .section-img {
+    max-width: 650px;
+  }
+}
+@media (min-width: 1140px) {
+  .section-img {
+    max-width: 810px;
   }
 }
 .header {
@@ -126,11 +188,7 @@ body {
 }
 
 .main {
-  display: flex;
-  flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
-  align-content: flex-start;
   padding-top: 40px;
 }
 .main-header {
@@ -177,23 +235,14 @@ body {
 }
 
 @media (min-width: 541px) {
-  .main {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
   .main-block {
     max-width: 380px;
   }
-  .main-img {
-    min-width: 300px;
-    max-width: 450px;
-  }
-  .main-img img {
-    width: 100%;
-  }
 }
 @media (min-width: 769px) {
+  .main {
+    justify-content: space-between;
+  }
   .main-block {
     max-width: 496px;
     display: flex;
@@ -211,14 +260,14 @@ body {
   }
   .main-header-hotel::before {
     margin-bottom: 0;
-    left: 65px;
+    left: 75px;
   }
   .main-header-baikal {
     font-size: 80px;
     line-height: 105px;
   }
-  .main-img img {
-    max-width: 450px;
+  .main-img {
+    max-width: 480px;
   }
 }
 @media (min-width: 993px) {
@@ -227,7 +276,7 @@ body {
     font-size: 24px;
   }
   .main-header-hotel::before {
-    left: 120px;
+    left: 115 px;
   }
   .main-header-baikal {
     margin-bottom: 6px;
@@ -237,10 +286,16 @@ body {
   .main-description {
     margin-bottom: 40px;
   }
+  .main-img {
+    max-width: 580px;
+  }
 }
 @media (min-width: 1140px) {
-  .main-img img {
+  .main-img {
     max-width: 602px;
+  }
+  .main-img img {
+    width: 100%;
   }
 }
 .about {
@@ -264,24 +319,27 @@ body {
   margin-bottom: 20px;
 }
 
-.section-title {
-  margin-bottom: 30px;
-  color: #2F70D9;
-  font-family: "Lora";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 38px;
-  letter-spacing: 0.03em;
+@media (min-width: 541px) {
+  .about-description::after {
+    margin-top: 20px;
+  }
 }
-.section-title::before {
-  content: "";
-  margin-bottom: -10px;
-  display: block;
-  position: relative;
-  left: 140px;
-  width: 60px;
-  height: 7px;
-  background: url(../assets/img/header-soft-grey-line.webp) right no-repeat;
-  background-size: contain;
+@media (min-width: 769px) {
+  .about-description::after {
+    margin-top: 55px;
+  }
+}
+@media (min-width: 993px) {
+  .about-description::after {
+    margin-top: 100px;
+    left: 0;
+    width: 98px;
+    height: 10px;
+    background: url(../assets/img/line-soft.webp) right no-repeat;
+  }
+}
+@media (min-width: 1140px) {
+  .about-description::after {
+    margin-top: 170px;
+  }
 }/*# sourceMappingURL=style.css.map */

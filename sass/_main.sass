@@ -1,9 +1,5 @@
 .main
-  display: flex
-  flex-direction: column
   justify-content: flex-start
-  align-items: flex-start
-  align-content: flex-start
   padding-top: 40px
   &-header
     width: 227px
@@ -43,20 +39,12 @@
     margin-top: 30px
 
 @media ( min-width: 541px )
-  .main
-    flex-direction: row
-    justify-content: space-between
-    align-items: center
-    &-block
-      max-width: 380px
-    &-img
-      min-width: 300px
-      max-width: 450px
-      img
-        width: 100%
+  .main-block
+    max-width: 380px
   
 @media ( min-width: 769px )
   .main
+    justify-content: space-between
     &-block
       max-width: 496px
       display: flex
@@ -71,13 +59,12 @@
         font-size: 17px
         &::before
           margin-bottom: 0
-          left: 65px
+          left: 75px
       &-baikal
         font-size: 80px
         line-height: 105px
     &-img
-      img
-        max-width: 450px
+      max-width: 480px
 
 @media ( min-width: 993px )
   .main
@@ -86,16 +73,18 @@
         margin-bottom: -50px
         font-size: 24px
         &::before
-          left: 120px
+          left: 115 px
       &-baikal
         margin-bottom: 6px
         font-size: 131px
         line-height: 168px
     &-description
       margin-bottom: 40px
+    &-img
+      max-width: 580px
 
 @media ( min-width: 1140px )
-  .main
-    &-img
-      img
-        max-width: 602px
+  .main-img
+    max-width: 602px
+    img
+      width: 100%

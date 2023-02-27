@@ -15,22 +15,22 @@
       p
          margin-bottom: 20px
 
-.section-title
-   margin-bottom: 30px
-   color: $main-color
-   font-family: 'Lora'
-   font-style: normal
-   font-weight: 700
-   font-size: 30px
-   line-height: 38px
-   letter-spacing: 0.03em
-   &::before
-      content: ''
-      margin-bottom: -10px
-      display: block
-      position: relative
-      left: 140px
-      width: 60px
-      height: 7px
-      background: url(../assets/img/header-soft-grey-line.webp) right no-repeat
-      background-size: contain
+@media ( min-width: 541px )
+   .about-description::after
+      margin-top: 20px
+
+@media ( min-width: 769px )
+   .about-description::after
+      margin-top: 55px
+
+@media ( min-width: 993px )
+   .about-description::after
+      margin-top: 100px
+      left: 0
+      width: 98px
+      height: 10px
+      background: url(../assets/img/line-soft.webp) right no-repeat
+
+@media ( min-width: 1140px )
+   .about-description::after
+      margin-top: 170px
