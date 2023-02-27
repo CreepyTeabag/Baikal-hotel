@@ -38,20 +38,14 @@
       line-height: 77px
       letter-spacing: 0.03em
   &-description
-    width: 100%
     margin-bottom: 20px
-    font-weight: 400
-    font-size: 13px
-    line-height: 141.18%
-    color: #686868
   &-img
     margin-top: 30px
-    img
-      max-width: 100%
 
 @media ( min-width: 541px )
   .main
     flex-direction: row
+    justify-content: space-between
     align-items: center
     &-block
       max-width: 380px
@@ -63,11 +57,10 @@
   
 @media ( min-width: 769px )
   .main
-    justify-content: center
     &-block
       max-width: 496px
       display: flex
-      flex-flow: column wrap
+      flex-direction: column
       justify-content: center
       align-items: flex-start
       align-content: flex-start
@@ -82,8 +75,6 @@
       &-baikal
         font-size: 80px
         line-height: 105px
-    &-description
-      font-size: 16px
     &-img
       img
         max-width: 450px
@@ -102,10 +93,6 @@
         line-height: 168px
     &-description
       margin-bottom: 40px
-      font-size: 16px
-    &-img
-      img
-        max-width: 450px
 
 @media ( min-width: 1140px )
   .main

@@ -23,6 +23,37 @@
          font-size: 16px
          line-height: 22px
 
+.description
+  width: 100%
+  max-width: 390px
+  font-weight: 400
+  font-size: 13px
+  line-height: 141.18%
+  color: #686868
+
+.section-img
+   img
+      max-width: 100%
+
+.row
+   display: flex
+   flex-direction: column
+   justify-content: space-between
+   align-items: flex-start
+   align-content: flex-start
+    
+@media ( min-width: 541px )
+   .row
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+
+@media ( min-width: 769px )
+   .row
+      justify-content: center
+   .description
+      font-size: 16px
+
 @media ( min-width: 993px )
    .button-book__big
       width: 285px
