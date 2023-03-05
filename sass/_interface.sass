@@ -80,7 +80,7 @@
    font-style: normal
    font-weight: 400
    font-size: 10px
-   line-height: 141.18%
+   line-height: 14px
    text-align: center
    letter-spacing: 0.03em
    color: $dark-grey
@@ -95,6 +95,9 @@
       line-height: 44px
       &::before
          left: 173px
+      &-offer
+         &::before
+            left: 235px
    .section-img
       min-width: 300px
       max-width: 450px
@@ -107,10 +110,19 @@
       line-height: 52px
       &::before
          left: 240px
+      &-offer
+         &::before
+            left: 320px
    .description
       font-size: 16px
    .section-img
       max-width: 600px
+   .card-title
+      font-size: 16px
+      line-height: 20px
+   .card-description
+      font-size: 12px
+      line-height: 17px
 
 @media ( min-width: 993px )
    .button-book__big
@@ -119,7 +131,7 @@
       font-size: 22px
       line-height: 30px
    .section-title
-      margin-bottom: 65 px
+      margin-bottom: 65px
       font-size: 50px
       line-height: 64px
       &::before
@@ -127,8 +139,17 @@
          width: 130px
          height: 11px
          background: url(../assets/img/line-sharp.webp) right no-repeat
+      &-offer
+         &::before
+            left: 295px
    .section-img
       max-width: 650px
+   .card-title
+      font-size: 20px
+      line-height: 25px
+   .card-description
+      font-size: 14px
+      line-height: 20px
 
 @media ( min-width: 1140px )
    .section-img
