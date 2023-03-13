@@ -92,6 +92,9 @@ body {
 .section-title-rooms::before {
   left: 153px;
 }
+.section-title-feedback::before {
+  left: 155px;
+}
 
 .description {
   width: 100%;
@@ -591,4 +594,56 @@ body {
     flex-basis: 15%;
     padding-left: 0;
   }
+}
+.feedback {
+  padding-top: 60px;
+}
+.feedback-wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: column wrap;
+}
+.feedback-card {
+  margin-bottom: 15px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: column wrap;
+  width: 272px;
+  background-color: #fff;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+.feedback-card-photo {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: #BEBEBE;
+  border-radius: 50%;
+}
+.feedback-card-photo img {
+  height: 30px;
+}
+.feedback-card-name {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 20px;
+}
+.feedback-card-description {
+  margin-bottom: 15px;
+  width: 174px;
+  font-size: 12px;
+  line-height: 17px;
+  text-align: left;
+}
+.feedback-card-date {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
 }/*# sourceMappingURL=style.css.map */
