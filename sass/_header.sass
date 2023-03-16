@@ -6,23 +6,57 @@
    display: flex
    justify-content: space-between
    align-items: flex-end
-   height: 27px
    &-logo
       margin-bottom: -6px
       img
          max-width: 108px
    &-hamburger
-      display: flex
-      justify-content: space-between
-      align-content: space-between
-      flex-flow: row wrap
-      width: 22px
-      height: 22px
-      margin-bottom: -1px
-      // background-color: red
+      &-squares
+         justify-content: space-between
+         align-content: space-between
+         flex-flow: row wrap
+         gap: 1px
+         width: 22px
+         height: 22px
+         margin-bottom: -1px
+      &-arrows
+         justify-content: center
+         align-items: center
+         width: 22px
+         height: 22px
+         .whiteline
+            width: 4px
+            height: 26px
+            background-color: #fff
+            z-index: 2
+            &-horizontal
+               rotate: 90deg
+            &-vertical
+               margin-left: -2px
+         .redline
+            position: absolute
+            width: 3px
+            height: 28px
+            background-color: $main-red
+            &-left
+               rotate: 45deg
+            &-right
+               rotate: -45deg
+         .redsquare
+            position: absolute
+            margin-left: 1px
+            width: 16px
+            height: 16px
+            background-color: $main-red
+            rotate: 45deg
+
 .square
-   width: 9px
-   height: 9px
+   width: 10px
+   height: 10px
    background-color: $main-color
    border-radius: 1px
-   margin: 1px
+
+.ham-show
+   display: flex
+.ham-hide
+   display: none
