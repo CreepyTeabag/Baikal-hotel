@@ -150,6 +150,9 @@ body {
   .section-title-rooms::before {
     left: 188px;
   }
+  .section-title-feedback::before {
+    left: 192px;
+  }
   .section-img {
     min-width: 300px;
     max-width: 450px;
@@ -171,6 +174,9 @@ body {
   }
   .section-title-rooms::before {
     left: 258px;
+  }
+  .section-title-feedback::before {
+    left: 264px;
   }
   .description {
     font-size: 16px;
@@ -210,6 +216,9 @@ body {
   }
   .section-title-rooms::before {
     left: 223px;
+  }
+  .section-title-feedback::before {
+    left: 229px;
   }
   .section-img {
     max-width: 650px;
@@ -646,4 +655,38 @@ body {
   font-weight: 300;
   font-size: 14px;
   line-height: 20px;
+}
+
+@media (min-width: 541px) {
+  .feedback-wrap {
+    justify-content: space-around;
+    flex-flow: row wrap;
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+  }
+}
+@media (min-width: 769px) {
+  .feedback-card {
+    margin-bottom: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 285px;
+  }
+  .feedback-card-photo {
+    margin-bottom: 30px;
+    width: 100px;
+    height: 100px;
+  }
+  .feedback-card-photo img {
+    height: 50px;
+  }
+  .feedback-card-name {
+    margin-bottom: 29px;
+  }
+  .feedback-card-description {
+    margin-bottom: 28px;
+    width: 237px;
+    font-size: 16px;
+    line-height: 23px;
+  }
 }/*# sourceMappingURL=style.css.map */
