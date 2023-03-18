@@ -8,10 +8,7 @@ let allMenuLinks = document.querySelectorAll('.menu-link');
 
 let menuToggle = function() {
    hamSquares.classList.toggle('ham-show');
-   hamSquares.classList.toggle('ham-hide');
-   hamArrows.classList.toggle('ham-hide');
    hamArrows.classList.toggle('ham-show');
-   menu.classList.toggle('ham-hide');
    menu.classList.toggle('ham-show');
 };
 

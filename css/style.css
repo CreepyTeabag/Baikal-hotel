@@ -280,6 +280,7 @@ body {
   max-width: 108px;
 }
 .header-hamburger-squares {
+  display: none;
   justify-content: space-between;
   align-content: space-between;
   flex-flow: row wrap;
@@ -289,6 +290,7 @@ body {
   margin-bottom: -1px;
 }
 .header-hamburger-arrows {
+  display: none;
   justify-content: center;
   align-items: center;
   width: 22px;
@@ -335,11 +337,7 @@ body {
 }
 
 .ham-show {
-  display: flex;
-}
-
-.ham-hide {
-  display: none;
+  display: flex !important;
 }
 
 .main-wrap {
@@ -759,6 +757,7 @@ body {
   }
 }
 .menu {
+  display: none;
   padding-top: 25px;
   position: absolute;
   z-index: 5;
