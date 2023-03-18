@@ -15,30 +15,32 @@
    <title>Гостиница Байкал</title>
 </head>
 <body>
-   <div class="container">
-      <div class="header">
-         <div class="header-logo">
-            <img src="assets/img/logo-transp-grey.webp" alt="logo-white">
-         </div>
-         <div class="header-hamburger-menu">
-            <div class="header-hamburger-squares ham-show">
-               <div class="square"></div>
-               <div class="square"></div>
-               <div class="square"></div>
-               <div class="square"></div>
+   <div class="header">
+      <div class="container">
+         <div class="header-wrap">
+            <div class="header-logo">
+               <img src="assets/img/logo-transp-grey.webp" alt="logo-white">
             </div>
-            <div class="header-hamburger-arrows ham-hide">
-               <div class="whiteline whiteline-horizontal"></div>
-               <div class="whiteline whiteline-vertical"></div>
-               <div class="redline redline-left"></div>
-               <div class="redline redline-right"></div>
-               <div class="redsquare"></div>
+            <div class="header-hamburger-menu">
+               <div class="header-hamburger-squares ham-show">
+                  <div class="square"></div>
+                  <div class="square"></div>
+                  <div class="square"></div>
+                  <div class="square"></div>
+               </div>
+               <div class="header-hamburger-arrows ham-hide">
+                  <div class="whiteline whiteline-horizontal"></div>
+                  <div class="whiteline whiteline-vertical"></div>
+                  <div class="redline redline-left"></div>
+                  <div class="redline redline-right"></div>
+                  <div class="redsquare"></div>
+               </div>
             </div>
          </div>
       </div>
-   </div>
-   <div class="container">
-      <div class="menu ham-hide">
+   </div> 
+   <div class="menu ham-hide">
+      <div class="container">
          <div class="menu-navigation">
             <ul>
                <li class="menu-link">
@@ -83,33 +85,35 @@
          </div>
       </div>
    </div>
-   <div class="container">
-      <div class="anchor" id="main"></div>
-      <div class="main row">
-         <div class="main-block">
-            <div class="main-header">
-               <div class="main-header-hotel">
-                  Гостиница
+   <div class="main">
+      <div class="container">
+         <div class="anchor" id="main"></div>
+         <div class="main-wrap row">
+            <div class="main-block">
+               <div class="main-header">
+                  <div class="main-header-hotel">
+                     Гостиница
+                  </div>
+                  <div class="main-header-baikal">
+                     Байкал
+                  </div>
                </div>
-               <div class="main-header-baikal">
-                  Байкал
+               <div class="main-description description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                </div>
+               <button class="button button-book button-book__big">
+                  Забронировать
+               </button>
             </div>
-            <div class="main-description description">
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            <div class="main-img section-img">
+               <img src="assets/img/main/hotel.webp" alt="hotel-img">
             </div>
-            <button class="button button-book button-book__big">
-               Забронировать
-            </button>
-         </div>
-         <div class="main-img section-img">
-            <img src="assets/img/main/hotel.webp" alt="hotel-img">
          </div>
       </div>
    </div>
-   <div class="container">
+   <div class="about">
       <div class="anchor" id="about"></div>
-      <div class="about">
+      <div class="container">
          <div class="section-title">
             О гостинице
          </div>
@@ -128,9 +132,9 @@
          </div>
       </div>
    </div>
-   <div class="container">
+   <div class="offer">
       <div class="anchor" id="offer"></div>
-      <div class="offer">
+      <div class="container">
          <div class="section-title section-title-offer">
             Мы предлагаем
          </div>
@@ -235,70 +239,70 @@
                </div>
             </div>
          </div>
-      </div>
+      </div> 
    </div>
-   <div class="container">
+   <div class="rooms">
       <div class="anchor" id="rooms"></div>
-      <div class="rooms">
+      <div class="container">
          <div class="section-title section-title-rooms">Наши номера</div>
-         <div class="rooms-wrap">
-            <div class="rooms-img rooms-img-left">
-               <img src="assets/img/rooms/man.webp" alt="Мужчина с чемоданом">
+      <div class="rooms-wrap">
+         <div class="rooms-img rooms-img-left">
+            <img src="assets/img/rooms/man.webp" alt="Мужчина с чемоданом">
+         </div>
+         <div class="rooms-card single-room">
+            <div class="rooms-card-icon">
+               <img src="assets/img/rooms/single-room.webp" alt="Номер на одного">
             </div>
-            <div class="rooms-card single-room">
-               <div class="rooms-card-icon">
-                  <img src="assets/img/rooms/single-room.webp" alt="Номер на одного">
-               </div>
-               <div class="rooms-card-name card-title">
-                  Одноместный номер
-               </div>
-               <ul class="rooms-card-list card-description">
-                  <li>Душ</li>
-                  <li>Кровать</li>
-                  <li>Телевизор</li>
-                  <li>Wi-Fi</li>
-                  <li>Что-то ещё</li>
-                  <li>Что-то ещё</li>
-               </ul>
-               <div class="rooms-card-price card-title">
-                  Стоимость
-               </div>
-               <div class="rooms-card-pricetag">
-                  <span>1000₽ /</span> сутки
-               </div>
+            <div class="rooms-card-name card-title">
+               Одноместный номер
             </div>
-            <div class="rooms-card double-room">
-               <div class="rooms-card-icon">
-                  <img src="assets/img/rooms/double-room.webp" alt="Номер на двоих">
-               </div>
-               <div class="rooms-card-name card-title">
-                  Двухместный номер
-               </div>
-               <ul class="rooms-card-list card-description">
-                  <li>Душ</li>
-                  <li>Кровать</li>
-                  <li>Телевизор</li>
-                  <li>Wi-Fi</li>
-                  <li>Что-то ещё</li>
-                  <li>Что-то ещё</li>
-               </ul>
-               <div class="rooms-card-price card-title">
-                  Стоимость
-               </div>
-               <div class="rooms-card-pricetag">
-                  <span>2000₽ /</span> сутки
-               </div>
+            <ul class="rooms-card-list card-description">
+               <li>Душ</li>
+               <li>Кровать</li>
+               <li>Телевизор</li>
+               <li>Wi-Fi</li>
+               <li>Что-то ещё</li>
+               <li>Что-то ещё</li>
+            </ul>
+            <div class="rooms-card-price card-title">
+               Стоимость
             </div>
-            
-            <div class="rooms-img rooms-img-right">
-               <img src="assets/img/rooms/woman.webp" alt="Женщина с растением"> 
+            <div class="rooms-card-pricetag">
+               <span>1000₽ /</span> сутки
             </div>
          </div>
+         <div class="rooms-card double-room">
+            <div class="rooms-card-icon">
+               <img src="assets/img/rooms/double-room.webp" alt="Номер на двоих">
+            </div>
+            <div class="rooms-card-name card-title">
+               Двухместный номер
+            </div>
+            <ul class="rooms-card-list card-description">
+               <li>Душ</li>
+               <li>Кровать</li>
+               <li>Телевизор</li>
+               <li>Wi-Fi</li>
+               <li>Что-то ещё</li>
+               <li>Что-то ещё</li>
+            </ul>
+            <div class="rooms-card-price card-title">
+               Стоимость
+            </div>
+            <div class="rooms-card-pricetag">
+               <span>2000₽ /</span> сутки
+            </div>
+         </div>
+         
+         <div class="rooms-img rooms-img-right">
+            <img src="assets/img/rooms/woman.webp" alt="Женщина с растением"> 
+         </div>
+      </div>
       </div>
    </div>
-   <div class="container">
+   <div class="feedback">
       <div class="anchor" id="feedback"></div>
-      <div class="feedback">
+      <div class="container">
          <div class="section-title section-title-feedback">
             Ваши отзывы
          </div>

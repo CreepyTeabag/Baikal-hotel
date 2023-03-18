@@ -27,6 +27,13 @@ body {
     margin: auto;
   }
 }
+.anchor {
+  display: block;
+  position: relative;
+  visibility: hidden;
+  top: -30px;
+}
+
 .button {
   display: flex;
   justify-content: center;
@@ -252,14 +259,19 @@ body {
     max-width: 810px;
   }
 }
-.header {
+.header-wrap {
+  margin-top: 0;
   padding-top: 15px;
   padding-bottom: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 51;
   height: 50px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  border-bottom: 2px solid rgba(104, 104, 104, 0.1);
 }
 .header-logo {
   margin-bottom: -6px;
@@ -330,7 +342,7 @@ body {
   display: none;
 }
 
-.main {
+.main-wrap {
   justify-content: flex-start;
   padding-top: 40px;
 }
@@ -748,11 +760,11 @@ body {
 }
 .menu {
   padding-top: 25px;
-  background-color: #fff;
   position: absolute;
   z-index: 5;
   flex-flow: column wrap;
   width: 100%;
+  background-color: #fff;
 }
 .menu-navigation .menu-link {
   padding-bottom: 20px;
