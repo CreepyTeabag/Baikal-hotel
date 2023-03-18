@@ -6,26 +6,28 @@
    flex-flow: column wrap
    width: 100%
    &-navigation
-      ul li
+      .menu-link
          padding-bottom: 20px
-         position: relative
-         font-weight: 400
-         font-size: 18px
-         line-height: 25px
-         color: $dark-grey
-         &:hover, &:active
-            font-weight: 800
-            color: $main-color
-            cursor: pointer
-            &::after
-               content: ''
-               margin-left: 155px
-               margin-top: -18px
-               display: block
-               width: 98px
-               height: 10px
-               background: url(../assets/img/line-soft.webp) left no-repeat
-               background-size: contain
+         a
+            position: relative
+            font-weight: 400
+            font-size: 18px
+            text-decoration: none
+            line-height: 25px
+            color: $dark-grey
+            &:hover, &:active
+               font-weight: 800
+               color: $main-color
+               cursor: pointer
+               &::after
+                  content: ''
+                  margin-left: 155px
+                  margin-top: -18px
+                  display: block
+                  width: 98px
+                  height: 10px
+                  background: url(../assets/img/line-soft.webp) left no-repeat
+                  background-size: contain
    &-address
       margin-top: 45px
       font-weight: 700

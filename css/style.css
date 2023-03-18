@@ -754,20 +754,23 @@ body {
   flex-flow: column wrap;
   width: 100%;
 }
-.menu-navigation ul li {
+.menu-navigation .menu-link {
   padding-bottom: 20px;
+}
+.menu-navigation .menu-link a {
   position: relative;
   font-weight: 400;
   font-size: 18px;
+  text-decoration: none;
   line-height: 25px;
   color: #686868;
 }
-.menu-navigation ul li:hover, .menu-navigation ul li:active {
+.menu-navigation .menu-link a:hover, .menu-navigation .menu-link a:active {
   font-weight: 800;
   color: #2F70D9;
   cursor: pointer;
 }
-.menu-navigation ul li:hover::after, .menu-navigation ul li:active::after {
+.menu-navigation .menu-link a:hover::after, .menu-navigation .menu-link a:active::after {
   content: "";
   margin-left: 155px;
   margin-top: -18px;
