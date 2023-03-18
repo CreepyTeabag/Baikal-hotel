@@ -1,0 +1,64 @@
+.menu
+   padding-top: 25px
+   background-color: $bg-color-white
+   position: absolute
+   z-index: 5
+   flex-flow: column wrap
+   width: 100%
+   &-navigation
+      ul li
+         padding-bottom: 20px
+         position: relative
+         font-weight: 400
+         font-size: 18px
+         line-height: 25px
+         color: $dark-grey
+         &:hover, &:active
+            font-weight: 800
+            color: $main-color
+            cursor: pointer
+            &::after
+               content: ''
+               margin-left: 155px
+               margin-top: -18px
+               display: block
+               width: 98px
+               height: 10px
+               background: url(../assets/img/line-soft.webp) left no-repeat
+               background-size: contain
+   &-address
+      margin-top: 45px
+      font-weight: 700
+      line-height: 22px
+      color: $dark-grey
+      span
+         font-weight: 400
+         font-size: 12px
+         line-height: 17px     
+   &-phone
+      margin-top: 15px
+      font-weight: 400
+      font-size: 20px
+      line-height: 27px
+      letter-spacing: 0.03em
+      color: $text-color-black
+   &-social
+      margin-top: 15px
+      margin-bottom: 15px
+      display: flex
+      flex-flow: row wrap
+      gap: 5px
+      cursor: pointer
+      .social-icon
+         display: flex
+         justify-content: center
+         align-items: center
+         width: 40px
+         height: 40px
+         border-radius: 10px
+         img
+            width: 20px
+         &__viber
+            background-color: $bg-color-viber
+         &__whatsapp
+            background-color: $bg-color-whatsapp

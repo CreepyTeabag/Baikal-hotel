@@ -56,6 +56,18 @@ body {
   font-size: 16px;
   line-height: 22px;
 }
+.button-outline {
+  margin-top: 28px;
+  width: 210px;
+  height: 40px;
+  border: 2.5px solid #2F70D9;
+  border-radius: 5px;
+  background: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #2F70D9;
+  cursor: pointer;
+}
 
 .row {
   display: flex;
@@ -733,4 +745,79 @@ body {
     font-size: 16px;
     line-height: 23px;
   }
+}
+.menu {
+  padding-top: 25px;
+  background-color: #fff;
+  position: absolute;
+  z-index: 5;
+  flex-flow: column wrap;
+  width: 100%;
+}
+.menu-navigation ul li {
+  padding-bottom: 20px;
+  position: relative;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #686868;
+}
+.menu-navigation ul li:hover, .menu-navigation ul li:active {
+  font-weight: 800;
+  color: #2F70D9;
+  cursor: pointer;
+}
+.menu-navigation ul li:hover::after, .menu-navigation ul li:active::after {
+  content: "";
+  margin-left: 155px;
+  margin-top: -18px;
+  display: block;
+  width: 98px;
+  height: 10px;
+  background: url(../assets/img/line-soft.webp) left no-repeat;
+  background-size: contain;
+}
+.menu-address {
+  margin-top: 45px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #686868;
+}
+.menu-address span {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+}
+.menu-phone {
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 0.03em;
+  color: #000;
+}
+.menu-social {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 5px;
+  cursor: pointer;
+}
+.menu-social .social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+.menu-social .social-icon img {
+  width: 20px;
+}
+.menu-social .social-icon__viber {
+  background-color: #A7D91A;
+}
+.menu-social .social-icon__whatsapp {
+  background-color: #C652EE;
 }/*# sourceMappingURL=style.css.map */
