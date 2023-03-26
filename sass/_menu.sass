@@ -6,6 +6,7 @@
    flex-flow: column wrap
    width: 100%
    background-color: $bg-color-white
+   border-bottom: 2px solid rgba($dark-grey, 0.1)
    &-navigation
       .menu-link
          padding-bottom: 20px
@@ -16,6 +17,13 @@
             text-decoration: none
             line-height: 25px
             color: $dark-grey
+            &::before
+               display: block
+               content: attr(title)
+               font-weight: 800
+               height: 0
+               overflow: hidden
+               visibility: hidden
             &:hover, &:active
                font-weight: 800
                color: $main-color
@@ -39,7 +47,7 @@
       span
          font-weight: 400
          font-size: 12px
-         line-height: 17px     
+         line-height: 17px
    &-phone
       margin-top: 15px
       font-weight: 400
@@ -67,3 +75,50 @@
             background-color: $bg-color-viber
          &__whatsapp
             background-color: $bg-color-whatsapp
+
+@media ( min-width: 769px )
+   .menu
+      padding: 0
+      position: relative
+      display: flex
+      justify-content: flex-end
+      align-items: center
+      flex-flow: row nowrap
+      border: none
+      gap: 15px
+      &-navigation
+         max-width: 550px
+         .menu-link a
+            font-size: 16px
+         ul
+            display: flex
+            justify-content: space-between
+            align-items: center
+            flex-flow: row nowrap
+            gap: 13px
+            .menu-link
+               padding-bottom: 0
+               a:hover, a:active
+                  &::after
+                     left: 50%
+                     transform: translateX(-50%)
+                     top: calc(100% + 7px)
+      &-info
+         display: none
+
+@media ( min-width: 993px )
+   .menu
+      gap: 20px
+      &-navigation
+         ul
+            gap: 20px
+
+@media ( min-width: 1201px )
+   .menu
+      gap: 50px
+      &-navigation
+         max-width: 800px
+         .menu-link a
+            font-size: 18px
+         ul
+            gap: 30px

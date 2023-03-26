@@ -1,16 +1,20 @@
 .header
-   &-wrap
+   position: fixed
+   top: 0
+   left: 0
+   right: 0
+   z-index: 500
+   background-color: $bg-color-white
+   &-wrap__small
       margin-top: 0
-      padding-top: 15px  
+      padding-top: 15px
       padding-bottom: 15px
-      position: sticky
-      top: 0
-      z-index: 51
       height: 50px
       width: 100%
       display: flex
       justify-content: space-between
       align-items: flex-end
+   &-wrap__big
       border-bottom: 2px solid rgba($dark-grey, 0.1)
    &-logo
       margin-bottom: -6px
@@ -66,3 +70,18 @@
 
 .ham-show
    display: flex !important
+
+@media ( min-width: 769px )
+   .header
+      &-wrap__small
+         max-width: 109px
+      &-wrap__big
+         padding-top: 12px
+         padding-bottom: 12px
+         display: flex
+         flex-flow: row nowrap
+      &-hamburger-menu
+         display: none
+// @media ( min-width: 993px )
+// @media ( min-width: 1201px )
+// @media ( min-width: 1401px )
