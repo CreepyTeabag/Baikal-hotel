@@ -40,7 +40,20 @@
       cursor: pointer
       img
          display: none
-
+   &-solid
+      border: 2.5px solid $main-red
+      border-radius: 10px
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1)
+      background-color: $main-red
+      color: $text-color-white
+      font-weight: 700
+      letter-spacing: 0.03em
+      text-align: center
+      cursor: pointer
+      width: 180px
+      height: 60px
+      font-size: 16px
+      line-height: 22px
 .row
    display: flex
    flex-direction: column
@@ -76,6 +89,10 @@
    &-feedback
       &::before
          left: 155px
+   &-popup
+      &::before
+         margin-bottom: -5px
+         left: 135px
 
 .description
    width: 100%
@@ -88,6 +105,16 @@
 .section-img
    img
       max-width: 100%
+
+.card
+   display: flex
+   justify-content: flex-start
+   align-items: center
+   flex-flow: column wrap
+   width: 272px
+   background-color: $bg-color-white
+   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1)
+   border-radius: 20px
 
 .card-title
    font-family: 'Lora'
@@ -128,6 +155,9 @@
       &-feedback
          &::before
             left: 192px
+      &-popup
+         &::before
+            left: 185px
    .section-img
       min-width: 300px
       max-width: 450px
@@ -137,17 +167,23 @@
 @media ( min-width: 769px )
    .anchor
       top: -100px
-   .button-outline
-      margin: 0
-      display: flex
-      justify-content: center
-      align-items: center
-      width: 40px
-      span
-         display: none
-      img
-         display: inline-block
-         width: 25px
+   .button
+      &-outline
+         margin: 0
+         display: flex
+         justify-content: center
+         align-items: center
+         width: 40px
+         span
+            display: none
+         img
+            display: inline-block
+            width: 25px
+      &-solid
+         width: 285px
+         height: 65px
+         font-size: 19px
+         line-height: 26px
    .section-title
       font-size: 45px
       line-height: 52px
@@ -162,6 +198,10 @@
       &-feedback
          &::before
             left: 264px
+      &-popup
+         &::before
+            margin-bottom: -5px
+            left: 330px
    .description
       font-size: 16px
    .section-img
@@ -180,6 +220,9 @@
          display: inline-block
       img
          display: none
+   .button-solid
+      font-size: 22px
+      line-height: 30px
    .button-book__big
       width: 285px
       height: 65px
@@ -203,6 +246,9 @@
       &-feedback
          &::before
             left: 229px
+      &-popup
+         &::before
+            left: 355px
    .section-img
       max-width: 650px
    .card-title

@@ -58,7 +58,7 @@
                      </li>
                   </ul>
                </div>
-               <button class="button-outline">
+               <button class="button-outline button-callback ">
                   <span>Обратный звонок</span>
                   <img src="assets/img/icon-phone.webp" alt="Обратный звонок">
                </button>
@@ -311,7 +311,7 @@
             Ваши отзывы
          </div>
          <div class="feedback-wrap">
-            <div class="feedback-card">
+            <div class="feedback-card card">
                <div class="feedback-card-photo">
                   <img src="assets/img/feedback/person-icon.webp" alt="Фото гостя">
                </div>
@@ -326,7 +326,7 @@
                   01.02 &mdash; 03.02
                </div>
             </div>
-            <div class="feedback-card">
+            <div class="feedback-card card">
                <div class="feedback-card-photo">
                   <img src="assets/img/feedback/person-icon.webp" alt="Фото гостя">
                </div>
@@ -341,7 +341,7 @@
                   01.02 &mdash; 03.02
                </div>
             </div>
-            <div class="feedback-card">
+            <div class="feedback-card card">
                <div class="feedback-card-photo">
                   <img src="assets/img/feedback/person-icon.webp" alt="Фото гостя">
                </div>
@@ -356,7 +356,7 @@
                   01.02 &mdash; 03.02
                </div>
             </div>
-            <div class="feedback-card">
+            <div class="feedback-card card">
                <div class="feedback-card-photo">
                   <img src="assets/img/feedback/person-icon.webp" alt="Фото гостя">
                </div>
@@ -374,6 +374,25 @@
          </div>
       </div>
    </div>
+    <div class="popup">
+      <div class="container">
+         <div class="popup-wrap card">
+            <div class="popup-close">×</div>
+            <div class="section-title section-title-popup popup-title">
+               Заполните форму!
+            </div>
+            <div class="card-description popup-description">
+               И наш специалист свяжется с вами в ближайшее время.
+            </div>
+            <div class="popup-form">
+               <input type="text" class="popup-form-input popup-form-name" name="user-name" placeholder="Ваше имя:" required>
+               <input type="tel" class="popup-form-input popup-form-phone" name="user-phone" placeholder="Телефон:" required>
+               <input type="text" class="popup-form-input popup-form-comment" name="user-comment" placeholder="Комментарий:">
+               <button class="button-solid button-solid__small button-send ">Отправить</button>
+            </div>
+         </div>
+      </div>
+    </div>
 
    <script src="scripts/script.js"></script>
 </body>

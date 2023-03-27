@@ -1,0 +1,108 @@
+.popup
+   position: absolute
+   top: 75px
+   left: 50%
+   transform: translateX(-50%)
+   &-wrap
+      padding: 35px 11px 35px 11px
+      width: 100%
+      border-radius: 20px
+      background-color: $bg-color-white
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15)
+   &-close
+      position: absolute
+      right: 5px
+      top: -28px
+      font-size: 40px
+      font-weight: 400
+      color: $main-color
+      cursor: pointer
+   &-title
+      margin-bottom: 10px
+      font-size: 20px
+      line-height: 26px
+   &-description
+      margin-bottom: 10px
+      font-size: 12px
+      line-height: 17px
+   &-form
+      display: flex
+      justify-content: flex-start
+      align-items: center
+      flex-flow: column wrap
+      &-input
+         margin-bottom: 5px
+         padding-top: 5px
+         padding-left: 19px
+         width: 250px
+         height: 50px
+         border: none
+         border-radius: 10px
+         box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1)
+         background-color: $bg-color-white
+         font-size: 10px
+         font-weight: 300
+         line-height: 140%
+         letter-spacing: 0.05em
+         color: $text-color-black
+         opacity: 0.5
+         &:focus, &:active
+            opacity: 1
+            border: none
+      &-comment
+         margin-bottom: 10px
+         height: 70px
+
+@media ( min-width: 541px )
+   .popup
+      top: 85px
+      &-wrap
+         width: 350px
+      &-title
+         font-size: 25px
+         line-height: 30px
+      &-form
+         &-input
+            width: 300px
+            font-size: 12px
+@media ( min-width: 769px )
+   .popup
+      top: 125px
+      &-wrap
+         padding: 40px 55px 40px 55px
+         width: 608px
+      &-close
+         right: -5px
+         top: -35px
+         font-size: 50px
+      &-title
+         margin-bottom: 15px
+         font-size: 40px
+         line-height: 48px
+      &-description
+         margin-bottom: 15px
+         font-size: 14px
+         line-height: 20px
+      &-form
+         &-input
+            margin-bottom: 10px
+            width: 488px
+            height: 60px
+         &-comment
+            margin-bottom: 20px
+            height: 98px
+@media ( min-width: 993px )
+   .popup
+      &-title
+         font-size: 50px
+         line-height: 64px
+      &-description
+         margin-bottom: 20px
+         font-size: 16px
+         line-height: 23px
+      &-form
+         &-input
+            font-size: 16px
+@media ( min-width: 1200px )
+   .popup-close
+      right: -30px
