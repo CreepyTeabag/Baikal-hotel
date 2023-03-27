@@ -1002,8 +1002,13 @@ body {
     line-height: 23px;
   }
 }
+.popup-show {
+  display: block !important;
+}
+
 .popup {
-  position: absolute;
+  display: none;
+  position: fixed;
   top: 75px;
   left: 50%;
   transform: translateX(-50%);
