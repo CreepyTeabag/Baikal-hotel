@@ -12,10 +12,10 @@
       width: 100%
       border-radius: 20px
       background-color: $bg-color-white
-      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15)
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3)
    &-close
-      position: absolute
-      right: 5px
+      position: relative
+      right: -110px
       top: -28px
       font-size: 40px
       font-weight: 400
@@ -25,6 +25,9 @@
       margin-bottom: 10px
       font-size: 20px
       line-height: 26px
+      &-success
+         &::before
+            display: none
    &-description
       margin-bottom: 10px
       font-size: 12px
@@ -34,6 +37,8 @@
       justify-content: flex-start
       align-items: center
       flex-flow: column wrap
+      font-family: 'Open Sans', sans-serif
+      font-weight: 300
       &-input
          margin-bottom: 5px
          padding-top: 5px
@@ -56,12 +61,28 @@
       &-comment
          margin-bottom: 10px
          height: 70px
+         resize: none
+   &-success
+      &-close
+         top: -20px
+      &-wrap
+         padding: 30px
+         width: 272px
+      &-img
+         margin-bottom: 10px
+         img
+            width: 130px
+      &-text
+         font-size: 20px
+         line-height: 26px
 
 @media ( min-width: 541px )
    .popup
       top: 85px
       &-wrap
          width: 350px
+      &-close
+         right: -150px
       &-title
          font-size: 25px
          line-height: 30px
@@ -69,6 +90,7 @@
          &-input
             width: 300px
             font-size: 12px
+
 @media ( min-width: 769px )
    .popup
       top: 125px
@@ -76,7 +98,7 @@
          padding: 40px 55px 40px 55px
          width: 608px
       &-close
-         right: -5px
+         right: -275px
          top: -35px
          font-size: 50px
       &-title
@@ -107,6 +129,3 @@
       &-form
          &-input
             font-size: 16px
-@media ( min-width: 1200px )
-   .popup-close
-      right: -30px
