@@ -60,7 +60,43 @@
    justify-content: space-between
    align-items: flex-start
    align-content: flex-start
-
+.social
+   margin-top: 15px
+   margin-bottom: 15px
+   display: flex
+   flex-flow: row wrap
+   gap: 5px
+   cursor: pointer
+   &-icon
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 40px
+      height: 40px
+      border-radius: 10px
+      img
+         width: 20px
+      &__viber
+         background-color: $bg-color-viber
+      &__whatsapp
+         background-color: $bg-color-whatsapp
+.phone
+   margin-top: 15px
+   font-weight: 400
+   font-size: 20px
+   line-height: 27px
+   letter-spacing: 0.03em
+   color: $text-color-black
+.address
+   margin-top: 45px
+   font-size: 16px
+   font-weight: 700
+   line-height: 22px
+   color: $dark-grey
+   span
+      font-weight: 400
+      font-size: 12px
+      line-height: 17px
 .section-title
    margin-bottom: 30px
    color: $main-color
@@ -93,7 +129,10 @@
       &::before
          margin-bottom: -5px
          left: 135px
-
+   &-contacts
+      margin-bottom: 15px
+      &::before
+         left: 95px
 .description
    width: 100%
    max-width: 390px
@@ -101,11 +140,9 @@
    font-size: 13px
    line-height: 141.18%
    color: #686868
-
 .section-img
    img
       max-width: 100%
-
 .card
    display: flex
    justify-content: flex-start
@@ -115,7 +152,6 @@
    background-color: $bg-color-white
    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1)
    border-radius: 20px
-
 .card-title
    font-family: 'Lora'
    font-style: normal
@@ -125,7 +161,6 @@
    text-align: center
    letter-spacing: 0.03em
    color: $main-color
-
 .card-description
    font-family: 'Open Sans'
    font-style: normal
@@ -135,7 +170,6 @@
    text-align: center
    letter-spacing: 0.03em
    color: $dark-grey
-
 @media ( min-width: 541px )
    .row
       flex-direction: row
@@ -158,12 +192,14 @@
       &-popup
          &::before
             left: 185px
+      &-contacts
+         &::before
+            left: 120px
    .section-img
       min-width: 300px
       max-width: 450px
       img
          width: 100%
-
 @media ( min-width: 769px )
    .anchor
       top: -100px
@@ -184,6 +220,24 @@
          height: 65px
          font-size: 19px
          line-height: 26px
+   .social-icon
+      margin-right: 20px
+      width: 50px
+      height: 50px
+      img
+         width: 25px
+         height: 25px
+   .phone-number
+      font-size: 22px
+      line-height: 30px
+   .address
+      font-size: 18px
+      line-height: 25px
+      margin-bottom: 10px
+      span
+         font-size: 14px
+         line-height: 20px
+         margin-bottom: 20px
    .section-title
       font-size: 45px
       line-height: 52px
@@ -202,6 +256,9 @@
          &::before
             margin-bottom: -5px
             left: 330px
+      &-contacts
+         &::before
+            left: 170px
    .description
       font-size: 16px
    .section-img
@@ -212,7 +269,6 @@
    .card-description
       font-size: 12px
       line-height: 17px
-
 @media ( min-width: 993px )
    .button-outline
       width: 210px
@@ -228,6 +284,26 @@
       height: 65px
       font-size: 22px
       line-height: 30px
+   .social
+      margin-top: 0
+      margin-bottom: 0
+      &-icon
+         margin-right: 30px
+         width: 60px
+         height: 60px
+         img
+            width: 30px
+            height: 30px
+   .phone
+      margin-bottom: 25px
+      &-number
+         font-size: 30px
+         line-height: 41px
+         margin-bottom: 10px
+   .address span
+      font-size: 16px
+      line-height: 23px
+      margin-bottom: 25px
    .section-title
       margin-bottom: 65px
       font-size: 50px
@@ -249,6 +325,10 @@
       &-popup
          &::before
             left: 355px
+      &-contacts
+         margin-bottom: 25px
+         &::before
+            left: 130px
    .section-img
       max-width: 650px
    .card-title
@@ -257,9 +337,10 @@
    .card-description
       font-size: 14px
       line-height: 20px
-
 @media ( min-width: 1201px )
    .section-title
       margin-bottom: 80px
+      &-contacts
+         margin-bottom: 25px
    .section-img
       max-width: 810px
