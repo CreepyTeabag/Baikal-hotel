@@ -1143,6 +1143,17 @@ body {
     line-height: 23px;
   }
 }
+.blocker {
+  position: fixed;
+  top: -250vw;
+  left: -150vw;
+  width: 300vw;
+  height: 500vw;
+  content: "";
+  z-index: -10;
+  background: rgba(47, 112, 217, 0.1);
+}
+
 .popup-show {
   display: block !important;
 }

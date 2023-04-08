@@ -30,6 +30,7 @@ const allCallbackButtons = document.querySelectorAll('.button-callback');
 const allBookButtons = document.querySelectorAll('.button-book');
 const popupForm = document.querySelector('.popup-form-block');
 const popupSuccess = document.querySelector('.popup-success');
+const blocker = document.querySelectorAll('.blocker');
 
 const popupFormToggle = () => {
   popupForm.classList.toggle('popup-show');
@@ -57,4 +58,13 @@ closeSuccessForm.forEach((closeButton) => {
 allSendButtons.forEach((sendButton) => {
   sendButton.addEventListener('click', popupFormToggle);
   sendButton.addEventListener('click', popupSuccessToggle);
+});
+
+const hidePopup = () => {
+  popupForm.classList.remove('popup-show');
+  popupSuccess.classList.remove('popup-show');
+};
+
+blocker.forEach((block) => {
+  block.addEventListener('click', hidePopup);
 });
