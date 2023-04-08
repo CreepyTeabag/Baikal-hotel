@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #fff;
   font-family: "Open Sans", sans-serif;
@@ -32,6 +36,32 @@ body {
   position: relative;
   visibility: hidden;
   top: -80px;
+}
+
+.back-to-top {
+  padding: 7px;
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 50;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #2F70D9;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #2F70D9;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: 0.2s ease-out;
+}
+.back-to-top:hover {
+  background-color: #f2f2f2;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+.back-to-top:hover span {
+  transform: translateY(-3px);
 }
 
 .button {

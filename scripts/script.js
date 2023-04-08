@@ -58,5 +58,3 @@ allSendButtons.forEach((sendButton) => {
   sendButton.addEventListener('click', popupFormToggle);
   sendButton.addEventListener('click', popupSuccessToggle);
 });
-
-// popupWindow.querySelector('input').value('');

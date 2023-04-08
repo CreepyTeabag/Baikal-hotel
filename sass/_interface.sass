@@ -3,6 +3,28 @@
    position: relative
    visibility: hidden
    top: -80px
+.back-to-top
+   padding: 7px
+   position: fixed
+   bottom: 1.5rem
+   right: 1.5rem
+   z-index: 50
+   display: inline-flex
+   align-items: center
+   justify-content: center
+   border: 3px solid $main-color
+   border-radius: 50%
+   background-color: $bg-color-white
+   color: $main-color
+   font-size: 1.5rem
+   text-decoration: none
+   transition: 0.2s ease-out
+   &:hover
+      background-color: darken($bg-color-white, 5%)
+      cursor: pointer
+      transition: 0.2s ease-out
+      span
+         transform: translateY(-3px)
 .button
    display: flex
    justify-content: center
