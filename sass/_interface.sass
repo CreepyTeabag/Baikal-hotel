@@ -38,6 +38,8 @@
       font-weight: 600
       color: $main-color
       cursor: pointer
+      &__narrow
+         margin-top: 15px
       img
          display: none
    &-solid
@@ -54,6 +56,12 @@
       height: 60px
       font-size: 16px
       line-height: 22px
+      &__narrow
+         border-radius: 5px
+         width: 210px
+         height: 40px
+         font-size: 18px
+         line-height: 26px
 .row
    display: flex
    flex-direction: column
@@ -170,6 +178,15 @@
    text-align: center
    letter-spacing: 0.03em
    color: $dark-grey
+.link
+   a
+      position: relative
+      font-weight: 400
+      font-size: 18px
+      text-decoration: none
+      line-height: 25px
+      &:hover, &:active
+         cursor: pointer
 @media ( min-width: 541px )
    .row
       flex-direction: row
@@ -215,11 +232,25 @@
          img
             display: inline-block
             width: 25px
+         &__narrow
+            margin-top: 15px
+            width: 210px
+            height: 40px
+            font-size: 18px
+            span
+               display: inline-block
+            img
+               display: none
       &-solid
          width: 285px
          height: 65px
          font-size: 19px
          line-height: 26px
+         &__narrow
+            width: 210px
+            height: 40px
+            font-size: 18px
+            line-height: 26px
    .social-icon
       margin-right: 20px
       width: 50px
@@ -279,6 +310,9 @@
    .button-solid
       font-size: 22px
       line-height: 30px
+      &__narrow
+         font-size: 18px
+         line-height: 26px
    .button-book__big
       width: 285px
       height: 65px

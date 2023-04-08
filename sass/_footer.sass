@@ -1,0 +1,100 @@
+.footer
+   padding-top: 40px
+   padding-bottom: 25px
+   background-color: $bg-color-dark-grey
+   *:not(.footer-block-name, button)
+      color: $text-color-white
+   &-row
+      align-items: center
+   &-logo
+      margin-bottom: 20px
+      img
+         width: 108px
+   &-navigation
+      li
+         margin-bottom: 15px
+   &-block
+      &__hidden
+         display: none
+      &-name
+         margin-bottom: 10px
+         font-size: 20px
+         line-height: 26px
+      &-buttons
+         margin-bottom: 20px
+         display: flex
+         flex-flow: column wrap
+         align-items: center
+      &-contacts
+         display: flex
+         flex-flow: column wrap
+         justify-content: flex-start
+         align-items: center
+         text-align: center
+   &-address
+      margin-top: 0px
+      font-size: 18px
+      line-height: 25px
+      span
+         margin-bottom: 5px
+         font-size: 16px
+         line-height: 23px
+   &-phone
+      margin-top: 5px
+      margin-bottom: 5px
+   &-social
+      margin-top: 0
+      margin-bottom: 20px
+      &-icon
+         margin-right: 10px
+         width: 30px
+         height: 30px
+         border-radius: 5px
+         img
+            width: 15px
+            height: 15px
+   &-bottom
+      display: flex
+      justify-content: center
+      align-items: center
+      font-family: 'Lora'
+      font-weight: 400
+      font-size: 16px
+      line-height: 20px
+@media ( min-width: 541px )
+   .footer
+      &-row
+         align-items: flex-start
+@media ( min-width: 769px )
+   .footer
+      &-social-icon
+         width: 30px
+         height: 30px
+         border-radius: 5px
+         img
+            width: 15px
+      &-block
+         &-name
+            text-align: left
+         &-contacts
+            align-items: flex-start
+            text-align: left
+@media ( min-width: 993px )
+   .footer
+      &-block__hidden
+         display: block
+      &-address
+         margin-top: 0px
+         font-size: 18px
+         line-height: 25px
+         span
+            margin-bottom: 5px
+            font-size: 16px
+            line-height: 23px
+      &-phone
+         margin-top: 5px
+         // margin-bottom: 5px
+         .phone-number
+            font-size: 20px
+            line-height: 27px
+// @media ( min-width: 1201px )
