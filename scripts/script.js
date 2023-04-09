@@ -1,4 +1,5 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable func-names */
 /* eslint-disable strict */
 
 'use strict';
