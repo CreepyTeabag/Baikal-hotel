@@ -23,48 +23,28 @@ allMenuLinks.forEach((menuLink) => {
 
 menu.querySelector('.button-callback').addEventListener('click', menuToggle);
 
-const closePopupForm = document.querySelectorAll('.popup-form-close');
-const closeSuccessForm = document.querySelectorAll('.popup-success-close');
-const allSendButtons = document.querySelectorAll('.button-send');
-const allCallbackButtons = document.querySelectorAll('.button-callback');
-const allBookButtons = document.querySelectorAll('.button-book');
+const formHideButtons = Array.from(document.querySelectorAll('.popup-hide'));
+const blocker = Array.from(document.querySelectorAll('.blocker'));
+const allCallbackButtons = Array.from(document.querySelectorAll('.button-callback'));
+const allBookButtons = Array.from(document.querySelectorAll('.button-book'));
 const popupForm = document.querySelector('.popup-form-block');
-const popupSuccess = document.querySelector('.popup-success');
-const blocker = document.querySelectorAll('.blocker');
 
-const popupFormToggle = () => {
-  popupForm.classList.toggle('popup-show');
-};
-const popupSuccessToggle = () => {
-  popupSuccess.classList.toggle('popup-show');
+const hideFormElements = formHideButtons.concat(blocker);
+
+const hidePopup = function() {
+  this.closest('.popup').classList.remove('popup-show');
 };
 
-allCallbackButtons.forEach((callbackButton) => {
-  callbackButton.addEventListener('click', popupFormToggle);
+hideFormElements.forEach((element) => {
+  element.addEventListener('click', hidePopup);
 });
 
-allBookButtons.forEach((bookButton) => {
-  bookButton.addEventListener('click', popupFormToggle);
-});
+const callbackFormButtons = allCallbackButtons.concat(allBookButtons);
 
-closePopupForm.forEach((closeButton) => {
-  closeButton.addEventListener('click', popupFormToggle);
-});
-
-closeSuccessForm.forEach((closeButton) => {
-  closeButton.addEventListener('click', popupSuccessToggle);
-});
-
-allSendButtons.forEach((sendButton) => {
-  sendButton.addEventListener('click', popupFormToggle);
-  sendButton.addEventListener('click', popupSuccessToggle);
-});
-
-const hidePopup = () => {
-  popupForm.classList.remove('popup-show');
-  popupSuccess.classList.remove('popup-show');
+const showPopup = function() {
+  popupForm.classList.add('popup-show');
 };
 
-blocker.forEach((block) => {
-  block.addEventListener('click', hidePopup);
+callbackFormButtons.forEach((button) => {
+  button.addEventListener('click', showPopup);
 });

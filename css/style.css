@@ -1173,7 +1173,7 @@ body {
   background-color: #fff;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
 }
-.popup-close {
+.popup-hide {
   position: relative;
   right: -110px;
   top: -28px;
@@ -1187,7 +1187,7 @@ body {
   font-size: 20px;
   line-height: 26px;
 }
-.popup-title-success::before {
+.popup-title-success::before, .popup-title-error::before {
   display: none;
 }
 .popup-description {
@@ -1229,20 +1229,20 @@ body {
   height: 70px;
   resize: none;
 }
-.popup-success-close {
+.popup-success-hide, .popup-error-hide {
   top: -20px;
 }
-.popup-success-wrap {
+.popup-success-wrap, .popup-error-wrap {
   padding: 30px;
   width: 272px;
 }
-.popup-success-img {
+.popup-success-img, .popup-error-img {
   margin-bottom: 10px;
 }
-.popup-success-img img {
+.popup-success-img img, .popup-error-img img {
   width: 130px;
 }
-.popup-success-text {
+.popup-success-text, .popup-error-text {
   font-size: 20px;
   line-height: 26px;
 }
@@ -1254,7 +1254,7 @@ body {
   .popup-wrap {
     width: 350px;
   }
-  .popup-close {
+  .popup-hide {
     right: -150px;
   }
   .popup-title {
@@ -1274,7 +1274,7 @@ body {
     padding: 40px 55px 40px 55px;
     width: 608px;
   }
-  .popup-close {
+  .popup-hide {
     right: -275px;
     top: -35px;
     font-size: 50px;
