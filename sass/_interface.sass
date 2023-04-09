@@ -1,8 +1,9 @@
 .anchor
-   display: block
    position: relative
-   visibility: hidden
+   display: block
    top: -80px
+   visibility: hidden
+
 .back-to-top
    padding: 7px
    position: fixed
@@ -25,6 +26,7 @@
       transition: 0.2s ease-out
       span
          transform: translateY(-3px)
+
 .button
    display: flex
    justify-content: center
@@ -65,31 +67,33 @@
       img
          display: none
    &-solid
+      width: 180px
+      height: 60px
       border: 2.5px solid $main-red
       border-radius: 10px
       box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1)
       background-color: $main-red
       color: $text-color-white
       font-weight: 700
+      font-size: 16px
+      line-height: 22px
       letter-spacing: 0.03em
       text-align: center
       cursor: pointer
-      width: 180px
-      height: 60px
-      font-size: 16px
-      line-height: 22px
       &__narrow
-         border-radius: 5px
          width: 210px
          height: 40px
+         border-radius: 5px
          font-size: 18px
          line-height: 26px
+
 .row
    display: flex
    flex-direction: column
    justify-content: space-between
    align-items: flex-start
    align-content: flex-start
+
 .social
    margin-top: 15px
    margin-bottom: 15px
@@ -110,6 +114,7 @@
          background-color: $bg-color-viber
       &__whatsapp
          background-color: $bg-color-whatsapp
+
 .phone
    margin-top: 15px
    font-weight: 400
@@ -117,6 +122,7 @@
    line-height: 27px
    letter-spacing: 0.03em
    color: $text-color-black
+
 .address
    margin-top: 45px
    font-size: 16px
@@ -127,21 +133,22 @@
       font-weight: 400
       font-size: 12px
       line-height: 17px
+
 .section-title
    margin-bottom: 30px
-   color: $main-color
    font-family: 'Lora'
    font-style: normal
    font-weight: 700
    font-size: 30px
    line-height: 38px
    letter-spacing: 0.03em
+   color: $main-color
    &::before
       content: ''
       margin-bottom: -10px
-      display: block
       position: relative
       left: 140px
+      display: block
       width: 60px
       height: 7px
       background: url(../assets/img/header-soft-grey-line.webp) right no-repeat
@@ -163,6 +170,7 @@
       margin-bottom: 15px
       &::before
          left: 95px
+
 .description
    width: 100%
    max-width: 390px
@@ -170,18 +178,21 @@
    font-size: 13px
    line-height: 141.18%
    color: #686868
+
 .section-img
    img
       max-width: 100%
+
 .card
    display: flex
    justify-content: flex-start
    align-items: center
    flex-flow: column wrap
    width: 272px
+   border-radius: 20px
    background-color: $bg-color-white
    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1)
-   border-radius: 20px
+
 .card-title
    font-family: 'Lora'
    font-style: normal
@@ -191,6 +202,7 @@
    text-align: center
    letter-spacing: 0.03em
    color: $main-color
+
 .card-description
    font-family: 'Open Sans'
    font-style: normal
@@ -200,6 +212,7 @@
    text-align: center
    letter-spacing: 0.03em
    color: $dark-grey
+
 .link
    a
       position: relative
@@ -209,6 +222,7 @@
       line-height: 25px
       &:hover, &:active
          cursor: pointer
+
 @media ( min-width: 541px )
    .row
       flex-direction: row
@@ -239,9 +253,11 @@
       max-width: 450px
       img
          width: 100%
+
 @media ( min-width: 769px )
    .anchor
       top: -100px
+
    .button
       &-outline
          margin: 0
@@ -273,6 +289,7 @@
             height: 40px
             font-size: 18px
             line-height: 26px
+
    .social-icon
       margin-right: 20px
       width: 50px
@@ -280,17 +297,20 @@
       img
          width: 25px
          height: 25px
+
    .phone-number
       font-size: 22px
       line-height: 30px
+
    .address
+      margin-bottom: 10px
       font-size: 18px
       line-height: 25px
-      margin-bottom: 10px
       span
+         margin-bottom: 20px
          font-size: 14px
          line-height: 20px
-         margin-bottom: 20px
+
    .section-title
       font-size: 45px
       line-height: 52px
@@ -312,16 +332,21 @@
       &-contacts
          &::before
             left: 170px
+
    .description
       font-size: 16px
+
    .section-img
       max-width: 600px
+
    .card-title
       font-size: 16px
       line-height: 20px
+
    .card-description
       font-size: 12px
       line-height: 17px
+
 @media ( min-width: 993px )
    .button-outline
       width: 210px
@@ -329,17 +354,20 @@
          display: inline-block
       img
          display: none
+
    .button-solid
       font-size: 22px
       line-height: 30px
       &__narrow
          font-size: 18px
          line-height: 26px
+
    .button-book__big
       width: 285px
       height: 65px
       font-size: 22px
       line-height: 30px
+
    .social
       margin-top: 0
       margin-bottom: 0
@@ -350,16 +378,19 @@
          img
             width: 30px
             height: 30px
+
    .phone
       margin-bottom: 25px
       &-number
+         margin-bottom: 10px
          font-size: 30px
          line-height: 41px
-         margin-bottom: 10px
+
    .address span
+      margin-bottom: 25px
       font-size: 16px
       line-height: 23px
-      margin-bottom: 25px
+
    .section-title
       margin-bottom: 65px
       font-size: 50px
@@ -385,14 +416,18 @@
          margin-bottom: 25px
          &::before
             left: 130px
+
    .section-img
       max-width: 650px
+
    .card-title
       font-size: 20px
       line-height: 25px
+
    .card-description
       font-size: 14px
       line-height: 20px
+
 @media ( min-width: 1201px )
    .section-title
       margin-bottom: 80px

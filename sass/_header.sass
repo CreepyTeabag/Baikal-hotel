@@ -9,11 +9,11 @@
       margin-top: 0
       padding-top: 15px
       padding-bottom: 15px
-      height: 50px
-      width: 100%
       display: flex
       justify-content: space-between
       align-items: flex-end
+      height: 50px
+      width: 100%
    &-wrap__big
       border-bottom: 2px solid rgba($dark-grey, 0.1)
    &-logo
@@ -22,6 +22,7 @@
          max-width: 108px
    &-hamburger
       &-squares
+         margin-bottom: -1px
          display: none
          justify-content: space-between
          align-content: space-between
@@ -29,7 +30,6 @@
          gap: 1px
          width: 22px
          height: 22px
-         margin-bottom: -1px
       &-arrows
          display: none
          justify-content: center
@@ -39,8 +39,8 @@
          .whiteline
             width: 4px
             height: 26px
-            background-color: #fff
             z-index: 2
+            background-color: #fff
             &-horizontal
                rotate: 90deg
             &-vertical
@@ -55,12 +55,12 @@
             &-right
                rotate: -45deg
          .redsquare
-            position: absolute
             margin-left: 1px
+            position: absolute
             width: 16px
             height: 16px
-            background-color: $main-red
             rotate: 45deg
+            background-color: $main-red
 
 .square
    width: 10px
@@ -82,6 +82,3 @@
          flex-flow: row nowrap
       &-hamburger-menu
          display: none
-// @media ( min-width: 993px )
-// @media ( min-width: 1201px )
-// @media ( min-width: 1401px )

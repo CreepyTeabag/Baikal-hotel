@@ -1,12 +1,12 @@
 .menu
-   display: none
    padding-top: 25px
    position: absolute
-   z-index: 5
+   display: none
    flex-flow: column wrap
    width: 100%
-   background-color: $bg-color-white
+   z-index: 5
    border-bottom: 2px solid rgba($dark-grey, 0.1)
+   background-color: $bg-color-white
    &::before
       content: ''
       position: absolute
@@ -23,8 +23,8 @@
          a
             color: $dark-grey
             &::before
-               display: block
                content: attr(title)
+               display: block
                font-weight: 800
                height: 0
                overflow: hidden
@@ -53,8 +53,8 @@
       justify-content: flex-end
       align-items: center
       flex-flow: row nowrap
-      border: none
       gap: 15px
+      border: none
       &-navigation
          max-width: 550px
          .menu-link a

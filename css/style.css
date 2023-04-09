@@ -32,10 +32,10 @@ body {
   }
 }
 .anchor {
-  display: block;
   position: relative;
-  visibility: hidden;
+  display: block;
   top: -80px;
+  visibility: hidden;
 }
 
 .back-to-top {
@@ -112,24 +112,24 @@ body {
   display: none;
 }
 .button-solid {
+  width: 180px;
+  height: 60px;
   border: 2.5px solid #D95845;
   border-radius: 10px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
   background-color: #D95845;
   color: #fff;
   font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
   letter-spacing: 0.03em;
   text-align: center;
   cursor: pointer;
-  width: 180px;
-  height: 60px;
-  font-size: 16px;
-  line-height: 22px;
 }
 .button-solid__narrow {
-  border-radius: 5px;
   width: 210px;
   height: 40px;
+  border-radius: 5px;
   font-size: 18px;
   line-height: 26px;
 }
@@ -192,20 +192,20 @@ body {
 
 .section-title {
   margin-bottom: 30px;
-  color: #2F70D9;
   font-family: "Lora";
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 38px;
   letter-spacing: 0.03em;
+  color: #2F70D9;
 }
 .section-title::before {
   content: "";
   margin-bottom: -10px;
-  display: block;
   position: relative;
   left: 140px;
+  display: block;
   width: 60px;
   height: 7px;
   background: url(../assets/img/header-soft-grey-line.webp) right no-repeat;
@@ -250,9 +250,9 @@ body {
   align-items: center;
   flex-flow: column wrap;
   width: 272px;
+  border-radius: 20px;
   background-color: #fff;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
 }
 
 .card-title {
@@ -380,14 +380,14 @@ body {
     line-height: 30px;
   }
   .address {
+    margin-bottom: 10px;
     font-size: 18px;
     line-height: 25px;
-    margin-bottom: 10px;
   }
   .address span {
+    margin-bottom: 20px;
     font-size: 14px;
     line-height: 20px;
-    margin-bottom: 20px;
   }
   .section-title {
     font-size: 45px;
@@ -468,14 +468,14 @@ body {
     margin-bottom: 25px;
   }
   .phone-number {
+    margin-bottom: 10px;
     font-size: 30px;
     line-height: 41px;
-    margin-bottom: 10px;
   }
   .address span {
+    margin-bottom: 25px;
     font-size: 16px;
     line-height: 23px;
-    margin-bottom: 25px;
   }
   .section-title {
     margin-bottom: 65px;
@@ -541,11 +541,11 @@ body {
   margin-top: 0;
   padding-top: 15px;
   padding-bottom: 15px;
-  height: 50px;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  height: 50px;
+  width: 100%;
 }
 .header-wrap__big {
   border-bottom: 2px solid rgba(104, 104, 104, 0.1);
@@ -557,6 +557,7 @@ body {
   max-width: 108px;
 }
 .header-hamburger-squares {
+  margin-bottom: -1px;
   display: none;
   justify-content: space-between;
   align-content: space-between;
@@ -564,7 +565,6 @@ body {
   gap: 1px;
   width: 22px;
   height: 22px;
-  margin-bottom: -1px;
 }
 .header-hamburger-arrows {
   display: none;
@@ -576,8 +576,8 @@ body {
 .header-hamburger-arrows .whiteline {
   width: 4px;
   height: 26px;
-  background-color: #fff;
   z-index: 2;
+  background-color: #fff;
 }
 .header-hamburger-arrows .whiteline-horizontal {
   rotate: 90deg;
@@ -598,12 +598,12 @@ body {
   rotate: -45deg;
 }
 .header-hamburger-arrows .redsquare {
-  position: absolute;
   margin-left: 1px;
+  position: absolute;
   width: 16px;
   height: 16px;
-  background-color: #D95845;
   rotate: 45deg;
+  background-color: #D95845;
 }
 
 .square {
@@ -632,14 +632,14 @@ body {
   }
 }
 .menu {
-  display: none;
   padding-top: 25px;
   position: absolute;
-  z-index: 5;
+  display: none;
   flex-flow: column wrap;
   width: 100%;
-  background-color: #fff;
+  z-index: 5;
   border-bottom: 2px solid rgba(104, 104, 104, 0.1);
+  background-color: #fff;
 }
 .menu::before {
   content: "";
@@ -659,8 +659,8 @@ body {
   color: #686868;
 }
 .menu-navigation .menu-link a::before {
-  display: block;
   content: attr(title);
+  display: block;
   font-weight: 800;
   height: 0;
   overflow: hidden;
@@ -692,8 +692,8 @@ body {
     justify-content: flex-end;
     align-items: center;
     flex-flow: row nowrap;
-    border: none;
     gap: 15px;
+    border: none;
   }
   .menu-navigation {
     max-width: 550px;
@@ -768,22 +768,22 @@ body {
 .main-header-hotel::before {
   content: "";
   margin-bottom: 2px;
-  display: block;
   position: relative;
   left: 45px;
+  display: block;
   width: 39px;
   height: 5px;
   background: url(../assets/img/line-soft-bold.webp) right no-repeat;
   background-size: contain;
 }
 .main-header-baikal {
-  color: #2F70D9;
   font-family: "Lora";
   font-style: normal;
   font-weight: 700;
   font-size: 60px;
   line-height: 77px;
   letter-spacing: 0.03em;
+  color: #2F70D9;
 }
 .main-description {
   margin-bottom: 20px;
@@ -803,12 +803,12 @@ body {
     justify-content: space-between;
   }
   .main-block {
-    max-width: 496px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     align-content: flex-start;
+    max-width: 496px;
   }
   .main-header {
     width: 100%;
@@ -934,11 +934,11 @@ body {
 
 @media (min-width: 541px) {
   .offer-item {
-    min-width: 150px;
-    max-width: 30%;
-    flex-basis: 33%;
     margin-left: 5px;
     margin-right: 5px;
+    flex-basis: 33%;
+    min-width: 150px;
+    max-width: 30%;
   }
 }
 @media (min-width: 769px) {
@@ -1155,12 +1155,12 @@ body {
   }
 }
 .blocker {
+  content: "";
   position: fixed;
   top: -250vw;
   left: -150vw;
   width: 300vw;
   height: 500vw;
-  content: "";
   z-index: -10;
   background: rgba(47, 112, 217, 0.1);
 }

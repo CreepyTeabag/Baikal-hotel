@@ -31,7 +31,7 @@ const popupForm = document.querySelector('.popup-form-block');
 
 const hideFormElements = formHideButtons.concat(blocker);
 
-const hidePopup = function() {
+const hidePopup = function () {
   this.closest('.popup').classList.remove('popup-show');
 };
 
@@ -41,7 +41,7 @@ hideFormElements.forEach((element) => {
 
 const callbackFormButtons = allCallbackButtons.concat(allBookButtons);
 
-const showPopup = function() {
+const showPopup = function () {
   popupForm.classList.add('popup-show');
 };
 
