@@ -13,6 +13,10 @@ html {
   visibility: hidden;
 }
 
+.section {
+  padding-top: 60px;
+}
+
 .back-to-top {
   padding: 7px;
   position: fixed;
@@ -673,6 +677,9 @@ html {
   .menu::before {
     display: none;
   }
+  .menu-info {
+    display: none;
+  }
   .menu-navigation {
     max-width: 550px;
   }
@@ -693,9 +700,6 @@ html {
     left: 50%;
     transform: translateX(-50%);
     top: calc(100% + 7px);
-  }
-  .menu-info {
-    display: none;
   }
 }
 @media (min-width: 993px) {
@@ -835,9 +839,6 @@ html {
     width: 100%;
   }
 }
-.about {
-  padding-top: 60px;
-}
 .about-description {
   margin-bottom: 30px;
 }
@@ -879,9 +880,6 @@ html {
   .about-description::after {
     margin-top: 170px;
   }
-}
-.offer {
-  padding-top: 60px;
 }
 .offer-item {
   margin-bottom: 20px;
@@ -943,9 +941,6 @@ html {
   .offer-item-name {
     margin-bottom: 10px;
   }
-}
-.rooms {
-  padding-top: 60px;
 }
 .rooms-wrap {
   display: flex;
@@ -1054,9 +1049,6 @@ html {
     padding-left: 0;
   }
 }
-.feedback {
-  padding-top: 60px;
-}
 .feedback-wrap {
   display: flex;
   justify-content: flex-start;
@@ -1134,11 +1126,10 @@ html {
 }
 .blocker {
   content: "";
-  position: fixed;
-  top: -250vw;
-  left: -150vw;
-  width: 300vw;
-  height: 500vw;
+  position: absolute;
+  width: 200vw;
+  height: 200vh;
+  transform: translate(-50%, -50%);
   z-index: -10;
   background: rgba(47, 112, 217, 0.1);
 }
@@ -1301,9 +1292,6 @@ html {
   .popup-form-input {
     font-size: 16px;
   }
-}
-.contacts {
-  padding-top: 60px;
 }
 .contacts-wrap {
   display: flex;

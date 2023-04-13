@@ -17,33 +17,32 @@
       height: 100%
       border-bottom: 2px solid rgba($dark-grey, 0.1)
       background-color: $bg-color-white
-   &-navigation
-      .menu-link
-         padding-bottom: 20px
-         a
-            color: $dark-grey
-            &::before
-               content: attr(title)
+   &-navigation .menu-link
+      padding-bottom: 20px
+      a
+         color: $dark-grey
+         &::before
+            content: attr(title)
+            display: block
+            font-weight: 800
+            height: 0
+            overflow: hidden
+            visibility: hidden
+         &:hover, &:active
+            font-weight: 800
+            color: $main-color
+            &::after
+               content: ''
                display: block
-               font-weight: 800
-               height: 0
-               overflow: hidden
-               visibility: hidden
-            &:hover, &:active
-               font-weight: 800
-               color: $main-color
-               &::after
-                  content: ''
-                  display: block
-                  position: absolute
-                  top: 50%
-                  transform: translateY(-50%)
-                  left: calc(100% + 10px)
-                  z-index: 15
-                  width: 98px
-                  height: 10px
-                  background: url(../assets/img/line-soft.webp) left no-repeat
-                  background-size: contain
+               position: absolute
+               top: 50%
+               transform: translateY(-50%)
+               left: calc(100% + 10px)
+               z-index: 15
+               width: 98px
+               height: 10px
+               background: url(../assets/img/line-soft.webp) left no-repeat
+               background-size: contain
 
 @media ( min-width: 769px )
    .menu
@@ -56,6 +55,8 @@
       gap: 15px
       border: none
       &::before
+         display: none
+      &-info
          display: none
       &-navigation
          max-width: 550px
@@ -74,15 +75,12 @@
                      left: 50%
                      transform: translateX(-50%)
                      top: calc(100% + 7px)
-      &-info
-         display: none
 
 @media ( min-width: 993px )
    .menu
       gap: 20px
-      &-navigation
-         ul
-            gap: 20px
+      &-navigation ul
+         gap: 20px
 
 @media ( min-width: 1201px )
    .menu

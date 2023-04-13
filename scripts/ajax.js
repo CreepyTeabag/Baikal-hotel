@@ -2,7 +2,7 @@ $(document).ready(function() {
    $('.popup-form').on('submit', function(event) {
       event.preventDefault();
 
-      var formData = $(this).serialize();
+      const formData = $(this).serialize();
       $.ajax({
          type: 'POST',
          data: formData,
