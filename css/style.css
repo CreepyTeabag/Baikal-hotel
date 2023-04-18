@@ -170,7 +170,10 @@ html {
 }
 
 .section-title {
+  position: relative;
   margin-bottom: 30px;
+  width: -moz-fit-content;
+  width: fit-content;
   font-family: "Lora";
   font-style: normal;
   font-weight: 700;
@@ -182,32 +185,16 @@ html {
 .section-title::before {
   content: "";
   margin-bottom: -10px;
-  position: relative;
-  left: 140px;
+  position: absolute;
+  right: 0;
   display: block;
   width: 60px;
   height: 7px;
   background: url(../assets/img/header-soft-grey-line.webp) right no-repeat;
   background-size: contain;
 }
-.section-title-offer::before {
-  left: 193px;
-}
-.section-title-rooms::before {
-  left: 153px;
-}
-.section-title-feedback::before {
-  left: 155px;
-}
-.section-title-popup::before {
-  margin-bottom: -5px;
-  left: 135px;
-}
 .section-title-contacts {
   margin-bottom: 15px;
-}
-.section-title-contacts::before {
-  left: 95px;
 }
 
 .description {
@@ -276,24 +263,6 @@ html {
   .section-title {
     font-size: 35px;
     line-height: 44px;
-  }
-  .section-title::before {
-    left: 173px;
-  }
-  .section-title-offer::before {
-    left: 235px;
-  }
-  .section-title-rooms::before {
-    left: 188px;
-  }
-  .section-title-feedback::before {
-    left: 192px;
-  }
-  .section-title-popup::before {
-    left: 185px;
-  }
-  .section-title-contacts::before {
-    left: 120px;
   }
   .section-img {
     min-width: 300px;
@@ -372,25 +341,6 @@ html {
     font-size: 45px;
     line-height: 52px;
   }
-  .section-title::before {
-    left: 240px;
-  }
-  .section-title-offer::before {
-    left: 320px;
-  }
-  .section-title-rooms::before {
-    left: 258px;
-  }
-  .section-title-feedback::before {
-    left: 264px;
-  }
-  .section-title-popup::before {
-    margin-bottom: -5px;
-    left: 330px;
-  }
-  .section-title-contacts::before {
-    left: 170px;
-  }
   .description {
     font-size: 16px;
   }
@@ -462,28 +412,12 @@ html {
     line-height: 64px;
   }
   .section-title::before {
-    left: 206px;
     width: 130px;
     height: 11px;
     background: url(../assets/img/line-sharp.webp) right no-repeat;
   }
-  .section-title-offer::before {
-    left: 295px;
-  }
-  .section-title-rooms::before {
-    left: 223px;
-  }
-  .section-title-feedback::before {
-    left: 229px;
-  }
-  .section-title-popup::before {
-    left: 355px;
-  }
   .section-title-contacts {
     margin-bottom: 25px;
-  }
-  .section-title-contacts::before {
-    left: 130px;
   }
   .section-img {
     max-width: 650px;
@@ -740,7 +674,10 @@ html {
   align-content: flex-start;
 }
 .main-header-hotel {
+  position: relative;
   margin-bottom: -28px;
+  width: -moz-fit-content;
+  width: fit-content;
   color: #686868;
   text-transform: uppercase;
   font-weight: 800;
@@ -749,9 +686,9 @@ html {
 }
 .main-header-hotel::before {
   content: "";
-  margin-bottom: 2px;
-  position: relative;
-  left: 45px;
+  position: absolute;
+  right: 0;
+  top: -5px;
   display: block;
   width: 39px;
   height: 5px;
@@ -799,10 +736,6 @@ html {
     margin-bottom: -30px;
     font-size: 17px;
   }
-  .main-header-hotel::before {
-    margin-bottom: 0;
-    left: 75px;
-  }
   .main-header-baikal {
     font-size: 80px;
     line-height: 105px;
@@ -815,9 +748,6 @@ html {
   .main-header-hotel {
     margin-bottom: -50px;
     font-size: 24px;
-  }
-  .main-header-hotel::before {
-    left: 115px;
   }
   .main-header-baikal {
     margin-bottom: 6px;

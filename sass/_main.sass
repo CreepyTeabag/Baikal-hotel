@@ -11,7 +11,9 @@
     align-items: flex-end
     align-content: flex-start
     &-hotel
+      position: relative
       margin-bottom: -28px
+      width: fit-content
       color: $dark-grey
       text-transform: uppercase
       font-weight: 800
@@ -19,9 +21,9 @@
       text-align: right
       &::before
         content: ''
-        margin-bottom: 2px
-        position: relative
-        left: 45px
+        position: absolute
+        right: 0
+        top: -5px
         display: block
         width: 39px
         height: 5px
@@ -60,9 +62,6 @@
       &-hotel
         margin-bottom: -30px
         font-size: 17px
-        &::before
-          margin-bottom: 0
-          left: 75px
       &-baikal
         font-size: 80px
         line-height: 105px
@@ -75,8 +74,6 @@
       &-hotel
         margin-bottom: -50px
         font-size: 24px
-        &::before
-          left: 115px
       &-baikal
         margin-bottom: 6px
         font-size: 131px

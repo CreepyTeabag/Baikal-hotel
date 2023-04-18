@@ -1,14 +1,12 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable func-names */
-/* eslint-disable strict */
-
 'use strict';
 
 const formHideButtons = Array.from(document.querySelectorAll('.popup-hide'));
 const blocker = Array.from(document.querySelectorAll('.blocker'));
-const allCallbackButtons = Array.from(document.querySelectorAll('.button-callback'));
+const allCallbackButtons = Array.from(
+  document.querySelectorAll('.button-callback'),
+);
 const allBookButtons = Array.from(document.querySelectorAll('.button-book'));
-const popupForm = document.querySelector('.popup-form-block');
+const popupCallback = document.querySelector('.popup-callback');
 
 const hideFormElements = formHideButtons.concat(blocker);
 
@@ -23,7 +21,7 @@ hideFormElements.forEach((element) => {
 const callbackFormButtons = allCallbackButtons.concat(allBookButtons);
 
 const showPopup = function () {
-  popupForm.classList.add('popup-show');
+  popupCallback.classList.add('popup-show');
 };
 
 callbackFormButtons.forEach((button) => {

@@ -1,571 +1,603 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/reset.css">
-   <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
-   <!-- Google Fonts -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-   <!-- Иконка для возврата наверх -->
-   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Иконка для возврата наверх -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
-   <title>Гостиница Байкал</title>
-</head>
-<body>
-   <div class="header">
+    <title>Гостиница Байкал</title>
+  </head>
+  <body>
+    <div class="header">
       <div class="container">
-         <div class="header-wrap__big">
-            <div class="header-wrap__small">
-               <div class="header-logo">
-                  <img src="assets/img/logo-transp-grey.webp" alt="Белый логотип">
-               </div>
-               <div class="header-hamburger-menu">
-                  <div class="header-hamburger-squares ham-show">
-                     <div class="square"></div>
-                     <div class="square"></div>
-                     <div class="square"></div>
-                     <div class="square"></div>
-                  </div>
-                  <div class="header-hamburger-arrows">
-                     <div class="whiteline whiteline-horizontal"></div>
-                     <div class="whiteline whiteline-vertical"></div>
-                     <div class="redline redline-left"></div>
-                     <div class="redline redline-right"></div>
-                     <div class="redsquare"></div>
-                  </div>
-               </div>
+        <div class="header-wrap__big">
+          <div class="header-wrap__small">
+            <div class="header-logo">
+              <img src="assets/img/logo-transp-grey.webp" alt="Белый логотип" />
             </div>
-            <div class="menu">
-               <div class="menu-navigation">
-                  <ul>
-                     <li class="link menu-link">
-                        <a href="#main" title="Главная">Главная</a>
-                     </li>
-                     <li class="link menu-link">
-                        <a href="#about" title="О гостинице">О гостинице</a>
-                     </li>
-                     <li class="link menu-link">
-                        <a href="#offer" title="Преимущества">Преимущества</a>
-                     </li>
-                     <li class="link menu-link">
-                        <a href="#rooms" title="Номера">Номера</a>
-                     </li>
-                     <li class="link menu-link">
-                        <a href="#feedback" title="Отзывы">Отзывы</a>
-                     </li>
-                  </ul>
-               </div>
-               <button class="button-outline button-callback">
-                  <span>Обратный звонок</span>
-                  <img src="assets/img/icon-phone.webp" alt="Обратный звонок">
-               </button>
-               <div class="menu-info">
-                  <div class="address">
-                     Адрес: <br>
-                     <span>озеро Байкал</span>
-                  </div>
-                  <div class="phone">
-                     <div class="phone-number">
-                        +7 (999) 8887766
-                     </div>
-                     <div class="phone-number">
-                        +71112223344
-                     </div>
-                  </div>
-                  <div class="social">
-                     <a href="viber://chat/?number=%2BphoneNumber">
-                        <div class="social-icon social-icon__viber">
-                           <img src="assets/img/viber-icon.webp" alt="Вайбер">
-                        </div>
-                     </a>
-                     <a href="https://wa.me/71112223344">
-                        <div class="social-icon social-icon__whatsapp">
-                           <img src="assets/img/whatsapp-icon.webp" alt="Ватсап">
-                        </div>
-                     </a>
-                  </div>
-               </div>
+            <div class="header-hamburger-menu">
+              <div class="header-hamburger-squares ham-show">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+              </div>
+              <div class="header-hamburger-arrows">
+                <div class="whiteline whiteline-horizontal"></div>
+                <div class="whiteline whiteline-vertical"></div>
+                <div class="redline redline-left"></div>
+                <div class="redline redline-right"></div>
+                <div class="redsquare"></div>
+              </div>
             </div>
-         </div>
-      </div>  
-   </div>
+          </div>
+          <div class="menu">
+            <div class="menu-navigation">
+              <ul>
+                <li class="link menu-link">
+                  <a href="#main" title="Главная">Главная</a>
+                </li>
+                <li class="link menu-link">
+                  <a href="#about" title="О гостинице">О гостинице</a>
+                </li>
+                <li class="link menu-link">
+                  <a href="#offer" title="Преимущества">Преимущества</a>
+                </li>
+                <li class="link menu-link">
+                  <a href="#rooms" title="Номера">Номера</a>
+                </li>
+                <li class="link menu-link">
+                  <a href="#feedback" title="Отзывы">Отзывы</a>
+                </li>
+              </ul>
+            </div>
+            <button class="button-outline button-callback">
+              <span>Обратный звонок</span>
+              <img src="assets/img/icon-phone.webp" alt="Обратный звонок" />
+            </button>
+            <div class="menu-info">
+              <div class="address">
+                Адрес: <br />
+                <span>озеро Байкал</span>
+              </div>
+              <div class="phone">
+                <div class="phone-number">+7 (999) 8887766</div>
+                <div class="phone-number">+71112223344</div>
+              </div>
+              <div class="social">
+                <a href="viber://chat/?number=%2BphoneNumber">
+                  <div class="social-icon social-icon__viber">
+                    <img src="assets/img/viber-icon.webp" alt="Вайбер" />
+                  </div>
+                </a>
+                <a href="https://wa.me/71112223344">
+                  <div class="social-icon social-icon__whatsapp">
+                    <img src="assets/img/whatsapp-icon.webp" alt="Ватсап" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <a href="#" class="back-to-top">
       <span class="material-icons">arrow_upward</span>
     </a>
 
-   <div class="main">
+    <div class="main">
       <div class="container">
-         <div class="anchor" id="main"></div>
-         <div class="main-wrap row">
-            <div class="main-block">
-               <div class="main-header">
-                  <div class="main-header-hotel">
-                     Гостиница
-                  </div>
-                  <div class="main-header-baikal">
-                     Байкал
-                  </div>
-               </div>
-               <div class="main-description description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-               </div>
-               <button class="button button-book button-book__big">
-                  Забронировать
-               </button>
+        <div class="anchor" id="main"></div>
+        <div class="main-wrap row">
+          <div class="main-block">
+            <div class="main-header">
+              <div class="main-header-hotel">Гостиница</div>
+              <div class="main-header-baikal">Байкал</div>
             </div>
-            <div class="main-img section-img">
-               <img src="assets/img/main/hotel.webp" alt="hotel-img">
+            <div class="main-description description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
             </div>
-         </div>
+            <button class="button button-book button-book__big">
+              Забронировать
+            </button>
+          </div>
+          <div class="main-img section-img">
+            <img src="assets/img/main/hotel.webp" alt="hotel-img" />
+          </div>
+        </div>
       </div>
-   </div>
+    </div>
 
-   <div class="about section">
+    <div class="about section">
       <div class="anchor" id="about"></div>
       <div class="container">
-         <div class="section-title">
-            О гостинице
-         </div>
-         <div class="row">
-            <div class="about-description description">
-               <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-               </p>
-               <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-               </p>
-            </div>
-            <div class="section-img">
-               <img src="assets/img/about/reception.webp" alt="Ресепшн">
-            </div>
-         </div>
+        <div class="section-title">О гостинице</div>
+        <div class="row">
+          <div class="about-description description">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="section-img">
+            <img src="assets/img/about/reception.webp" alt="Ресепшн" />
+          </div>
+        </div>
       </div>
-   </div>
+    </div>
 
-   <div class="offer section">
+    <div class="offer section">
       <div class="anchor" id="offer"></div>
       <div class="container">
-         <div class="section-title section-title-offer">
-            Мы предлагаем
-         </div>
-         <div class="offer-item-wrap">
-            <div class="offer-item">
-               <div class="offer-item-icon">
-                  <img src="assets/img/offer/WIFI.webp" alt="Wi-Fi">
-               </div>
-               <div class="offer-item-name card-title">
-                  Бесплатный WI-FI
-               </div>
-               <div class="offer-item-description card-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-               </div>
+        <div class="section-title">Мы предлагаем</div>
+        <div class="offer-item-wrap">
+          <div class="offer-item">
+            <div class="offer-item-icon">
+              <img src="assets/img/offer/WIFI.webp" alt="Wi-Fi" />
             </div>
-            <div class="offer-item">
-               <div class="offer-item-icon">
-                  <img src="assets/img/offer/24-7.webp" alt="24/7">
-               </div>
-               <div class="offer-item-name card-title">
-                  Круглосуточный<br>доступ
-               </div>
-               <div class="offer-item-description card-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-               </div>
+            <div class="offer-item-name card-title">Бесплатный WI-FI</div>
+            <div class="offer-item-description card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
             </div>
-            <div class="offer-item">
-               <div class="offer-item-icon">
-                  <img src="assets/img/offer/parking.webp" alt="Парковка">
-               </div>
-               <div class="offer-item-name card-title">
-                  Парковка
-               </div>
-               <div class="offer-item-description card-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-               </div>
+          </div>
+          <div class="offer-item">
+            <div class="offer-item-icon">
+              <img src="assets/img/offer/24-7.webp" alt="24/7" />
             </div>
-            <div class="offer-item">
-               <div class="offer-item-icon">
-                  <img src="assets/img/offer/tv.webp" alt="Телевизор">
-               </div>
-               <div class="offer-item-name card-title">
-                  Телевизор
-               </div>
-               <div class="offer-item-description card-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-               </div>
+            <div class="offer-item-name card-title">
+              Круглосуточный<br />доступ
             </div>
-            <div class="offer-item">
-               <div class="offer-item-icon">
-                  <img src="assets/img/offer/cleaning.webp" alt="Уборка">
-               </div>
-               <div class="offer-item-name card-title">
-                  Влажная уборка
-               </div>
-               <div class="offer-item-description card-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-               </div>
+            <div class="offer-item-description card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
             </div>
-            <div class="offer-item">
-               <div class="offer-item-icon">
-                  <img src="assets/img/offer/bathhouse.webp" alt="Баня">
-               </div>
-               <div class="offer-item-name card-title">
-                  Банно-прачечный<br>комплекс
-               </div>
-               <div class="offer-item-description card-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-               </div>
+          </div>
+          <div class="offer-item">
+            <div class="offer-item-icon">
+              <img src="assets/img/offer/parking.webp" alt="Парковка" />
             </div>
-            <div class="offer-item">
-               <div class="offer-item-icon">
-                  <img src="assets/img/offer/kitchen.webp" alt="Кухня">
-               </div>
-               <div class="offer-item-name card-title">
-                  Собственная кухня
-               </div>
-               <div class="offer-item-description card-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-               </div>
+            <div class="offer-item-name card-title">Парковка</div>
+            <div class="offer-item-description card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
             </div>
-            <div class="offer-item">
-               <div class="offer-item-icon">
-                  <img src="assets/img/offer/banquet.webp" alt="Банкет">
-               </div>
-               <div class="offer-item-name card-title">
-                  Банкетный зал
-               </div>
-               <div class="offer-item-description card-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-               </div>
+          </div>
+          <div class="offer-item">
+            <div class="offer-item-icon">
+              <img src="assets/img/offer/tv.webp" alt="Телевизор" />
             </div>
-            <div class="offer-item">
-               <div class="offer-item-icon">
-                  <img src="assets/img/offer/utensils.webp" alt="Столовая">
-               </div>
-               <div class="offer-item-name card-title">
-                  Просторная столовая
-               </div>
-               <div class="offer-item-description card-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-               </div>
+            <div class="offer-item-name card-title">Телевизор</div>
+            <div class="offer-item-description card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
             </div>
-         </div>
-      </div> 
-   </div>
+          </div>
+          <div class="offer-item">
+            <div class="offer-item-icon">
+              <img src="assets/img/offer/cleaning.webp" alt="Уборка" />
+            </div>
+            <div class="offer-item-name card-title">Влажная уборка</div>
+            <div class="offer-item-description card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </div>
+          </div>
+          <div class="offer-item">
+            <div class="offer-item-icon">
+              <img src="assets/img/offer/bathhouse.webp" alt="Баня" />
+            </div>
+            <div class="offer-item-name card-title">
+              Банно-прачечный<br />комплекс
+            </div>
+            <div class="offer-item-description card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </div>
+          </div>
+          <div class="offer-item">
+            <div class="offer-item-icon">
+              <img src="assets/img/offer/kitchen.webp" alt="Кухня" />
+            </div>
+            <div class="offer-item-name card-title">Собственная кухня</div>
+            <div class="offer-item-description card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </div>
+          </div>
+          <div class="offer-item">
+            <div class="offer-item-icon">
+              <img src="assets/img/offer/banquet.webp" alt="Банкет" />
+            </div>
+            <div class="offer-item-name card-title">Банкетный зал</div>
+            <div class="offer-item-description card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </div>
+          </div>
+          <div class="offer-item">
+            <div class="offer-item-icon">
+              <img src="assets/img/offer/utensils.webp" alt="Столовая" />
+            </div>
+            <div class="offer-item-name card-title">Просторная столовая</div>
+            <div class="offer-item-description card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-   <div class="rooms section">
+    <div class="rooms section">
       <div class="anchor" id="rooms"></div>
       <div class="container">
-         <div class="section-title section-title-rooms">Наши номера</div>
-      <div class="rooms-wrap">
-         <div class="rooms-img rooms-img-left">
-            <img src="assets/img/rooms/man.webp" alt="Мужчина с чемоданом">
-         </div>
-         <div class="rooms-card single-room">
+        <div class="section-title">Наши номера</div>
+        <div class="rooms-wrap">
+          <div class="rooms-img rooms-img-left">
+            <img src="assets/img/rooms/man.webp" alt="Мужчина с чемоданом" />
+          </div>
+          <div class="rooms-card single-room">
             <div class="rooms-card-icon">
-               <img src="assets/img/rooms/single-room.webp" alt="Номер на одного">
+              <img
+                src="assets/img/rooms/single-room.webp"
+                alt="Номер на одного"
+              />
             </div>
-            <div class="rooms-card-name card-title">
-               Одноместный номер
-            </div>
+            <div class="rooms-card-name card-title">Одноместный номер</div>
             <ul class="rooms-card-list card-description">
-               <li>Душ</li>
-               <li>Кровать</li>
-               <li>Телевизор</li>
-               <li>Wi-Fi</li>
-               <li>Что-то ещё</li>
-               <li>Что-то ещё</li>
+              <li>Душ</li>
+              <li>Кровать</li>
+              <li>Телевизор</li>
+              <li>Wi-Fi</li>
+              <li>Что-то ещё</li>
+              <li>Что-то ещё</li>
             </ul>
-            <div class="rooms-card-price card-title">
-               Стоимость
-            </div>
-            <div class="rooms-card-pricetag">
-               <span>1000₽ /</span> сутки
-            </div>
-         </div>
-         <div class="rooms-card double-room">
+            <div class="rooms-card-price card-title">Стоимость</div>
+            <div class="rooms-card-pricetag"><span>1000₽ /</span> сутки</div>
+          </div>
+          <div class="rooms-card double-room">
             <div class="rooms-card-icon">
-               <img src="assets/img/rooms/double-room.webp" alt="Номер на двоих">
+              <img
+                src="assets/img/rooms/double-room.webp"
+                alt="Номер на двоих"
+              />
             </div>
-            <div class="rooms-card-name card-title">
-               Двухместный номер
-            </div>
+            <div class="rooms-card-name card-title">Двухместный номер</div>
             <ul class="rooms-card-list card-description">
-               <li>Душ</li>
-               <li>Кровать</li>
-               <li>Телевизор</li>
-               <li>Wi-Fi</li>
-               <li>Что-то ещё</li>
-               <li>Что-то ещё</li>
+              <li>Душ</li>
+              <li>Кровать</li>
+              <li>Телевизор</li>
+              <li>Wi-Fi</li>
+              <li>Что-то ещё</li>
+              <li>Что-то ещё</li>
             </ul>
-            <div class="rooms-card-price card-title">
-               Стоимость
-            </div>
-            <div class="rooms-card-pricetag">
-               <span>2000₽ /</span> сутки
-            </div>
-         </div>
-         
-         <div class="rooms-img rooms-img-right">
-            <img src="assets/img/rooms/woman.webp" alt="Женщина с растением"> 
-         </div>
-      </div>
-      </div>
-   </div>
+            <div class="rooms-card-price card-title">Стоимость</div>
+            <div class="rooms-card-pricetag"><span>2000₽ /</span> сутки</div>
+          </div>
 
-   <div class="feedback section">
+          <div class="rooms-img rooms-img-right">
+            <img src="assets/img/rooms/woman.webp" alt="Женщина с растением" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="feedback section">
       <div class="anchor" id="feedback"></div>
       <div class="container">
-         <div class="section-title section-title-feedback">
-            Ваши отзывы
-         </div>
-         <div class="feedback-wrap">
-            <div class="feedback-card card">
-               <div class="feedback-card-photo">
-                  <img src="assets/img/feedback/person-icon.webp" alt="Фото гостя">
-               </div>
-               <div class="feedback-card-name card-title">
-                  Иван Иванов
-               </div>
-               <div class="feedback-card-description card-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.<br>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-               </div>
-               <div class="feedback-card-date">
-                  01.02 &mdash; 03.02
-               </div>
+        <div class="section-title">Ваши отзывы</div>
+        <div class="feedback-wrap">
+          <div class="feedback-card card">
+            <div class="feedback-card-photo">
+              <img
+                src="assets/img/feedback/person-icon.webp"
+                alt="Фото гостя"
+              />
             </div>
-            <div class="feedback-card card">
-               <div class="feedback-card-photo">
-                  <img src="assets/img/feedback/person-icon.webp" alt="Фото гостя">
-               </div>
-               <div class="feedback-card-name card-title">
-                  Иван Иванов
-               </div>
-               <div class="feedback-card-description card-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.<br>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-               </div>
-               <div class="feedback-card-date">
-                  01.02 &mdash; 03.02
-               </div>
+            <div class="feedback-card-name card-title">Иван Иванов</div>
+            <div class="feedback-card-description card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.<br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
             </div>
-            <div class="feedback-card card">
-               <div class="feedback-card-photo">
-                  <img src="assets/img/feedback/person-icon.webp" alt="Фото гостя">
-               </div>
-               <div class="feedback-card-name card-title">
-                  Иван Иванов
-               </div>
-               <div class="feedback-card-description card-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.<br>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-               </div>
-               <div class="feedback-card-date">
-                  01.02 &mdash; 03.02
-               </div>
+            <div class="feedback-card-date">01.02 &mdash; 03.02</div>
+          </div>
+          <div class="feedback-card card">
+            <div class="feedback-card-photo">
+              <img
+                src="assets/img/feedback/person-icon.webp"
+                alt="Фото гостя"
+              />
             </div>
-            <div class="feedback-card card">
-               <div class="feedback-card-photo">
-                  <img src="assets/img/feedback/person-icon.webp" alt="Фото гостя">
-               </div>
-               <div class="feedback-card-name card-title">
-                  Иван Иванов
-               </div>
-               <div class="feedback-card-description card-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.<br>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-               </div>
-               <div class="feedback-card-date card-description">
-                  01.02 &mdash; 03.02
-               </div>
+            <div class="feedback-card-name card-title">Иван Иванов</div>
+            <div class="feedback-card-description card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.<br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
             </div>
-         </div>
+            <div class="feedback-card-date">01.02 &mdash; 03.02</div>
+          </div>
+          <div class="feedback-card card">
+            <div class="feedback-card-photo">
+              <img
+                src="assets/img/feedback/person-icon.webp"
+                alt="Фото гостя"
+              />
+            </div>
+            <div class="feedback-card-name card-title">Иван Иванов</div>
+            <div class="feedback-card-description card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.<br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </div>
+            <div class="feedback-card-date">01.02 &mdash; 03.02</div>
+          </div>
+          <div class="feedback-card card">
+            <div class="feedback-card-photo">
+              <img
+                src="assets/img/feedback/person-icon.webp"
+                alt="Фото гостя"
+              />
+            </div>
+            <div class="feedback-card-name card-title">Иван Иванов</div>
+            <div class="feedback-card-description card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.<br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </div>
+            <div class="feedback-card-date card-description">
+              01.02 &mdash; 03.02
+            </div>
+          </div>
+        </div>
       </div>
-   </div>
+    </div>
 
-   <div class="popup popup-form-block">
+    <div class="popup popup-callback">
       <div class="blocker"></div>
       <div class="container">
-         <div class="popup-wrap card">
-            <div class="popup-hide popup-form-hide">×</div>
-            <div class="section-title section-title-popup popup-title">
-               Заполните форму!
-            </div>
-            <div class="card-description popup-description">
-               И наш специалист свяжется с вами в ближайшее время.
-            </div>
-            <form class="popup-form">
-               <input type="text" class="popup-form-input popup-form-name" name="user-name" placeholder="Ваше имя:" required>
-               <input type="tel" class="popup-form-input popup-form-phone" id="popup-form-phone" name="user-phone" placeholder="Телефон:" required>
-               <textarea type="text" class="popup-form-input popup-form-comment" name="user-comment" placeholder="Комментарий:"></textarea>
-               <button class="button-solid button-solid__small button-send" type="submit">Отправить</button>
-            </form>
-         </div>
+        <div class="popup-wrap card">
+          <div class="popup-hide popup-form-hide">×</div>
+          <div class="section-title popup-title">Заполните форму!</div>
+          <div class="card-description popup-description">
+            И наш специалист свяжется с вами в ближайшее время.
+          </div>
+          <form class="popup-form">
+            <input
+              type="text"
+              class="popup-form-input popup-form-name"
+              name="user-name"
+              placeholder="Ваше имя:"
+              required
+            />
+            <input
+              type="tel"
+              class="popup-form-input popup-form-phone"
+              id="popup-form-phone"
+              name="user-phone"
+              placeholder="Телефон:"
+              required
+            />
+            <textarea
+              type="text"
+              class="popup-form-input popup-form-comment"
+              name="user-comment"
+              placeholder="Комментарий:"
+            ></textarea>
+            <button
+              class="button-solid button-solid__small button-send"
+              type="submit"
+            >
+              Отправить
+            </button>
+          </form>
+        </div>
       </div>
-   </div>
+    </div>
 
-   <div class="popup popup-success">
+    <div class="popup popup-success">
       <div class="blocker"></div>
       <div class="container">
-         <div class="popup-wrap popup-success-wrap card">
-            <div class="popup-hide popup-success-hide">×</div>
-            <div class="popup-success-img">
-               <img src="assets/img/popup/success.webp" alt="Получилось!">
-            </div>
-            <div class="section-title section-title-popup popup-title popup-title-success">
-               Спасибо за заявку!
-            </div>
-         </div>
+        <div class="popup-wrap popup-success-wrap card">
+          <div class="popup-hide popup-success-hide">×</div>
+          <div class="popup-success-img">
+            <img src="assets/img/popup/success.webp" alt="Получилось!" />
+          </div>
+          <div class="section-title popup-title popup-title-success">
+            Спасибо за заявку!
+          </div>
+        </div>
       </div>
-   </div>
+    </div>
 
-   <div class="popup popup-error">
+    <div class="popup popup-error">
       <div class="blocker"></div>
       <div class="container">
-         <div class="popup-wrap popup-error-wrap card">
-            <div class="popup-hide popup-error-hide">×</div> 
-            <div class="popup-error-img">
-               <img src="assets/img/popup/error.webp" alt="Ошибка!">
-            </div>
-            <div class="section-title section-title-popup popup-title popup-title-error">
-               Всё сломалось...
-            </div>
-         </div>
+        <div class="popup-wrap popup-error-wrap card">
+          <div class="popup-hide popup-error-hide">×</div>
+          <div class="popup-error-img">
+            <img src="assets/img/popup/error.webp" alt="Ошибка!" />
+          </div>
+          <div class="section-title popup-title popup-title-error">
+            Всё сломалось...
+          </div>
+        </div>
       </div>
-   </div>
+    </div>
 
-   <div class="contacts section">
+    <div class="contacts section">
       <div class="container">
-         <div class="contacts-wrap">
-            <div class="map map__small">
-               <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A98c9571676f587b204ac7a927c8043c94ae063ab6f66def7b3f478e14b31bced&amp;width=100%25&amp;height=272&amp;lang=ru_RU&amp;scroll=false"></script>
+        <div class="contacts-wrap">
+          <div class="map map__small">
+            <script
+              type="text/javascript"
+              charset="utf-8"
+              async
+              src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A98c9571676f587b204ac7a927c8043c94ae063ab6f66def7b3f478e14b31bced&amp;width=100%25&amp;height=272&amp;lang=ru_RU&amp;scroll=false"
+            ></script>
+          </div>
+          <div class="map map__big">
+            <script
+              type="text/javascript"
+              charset="utf-8"
+              async
+              src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5e1b96a69e5792efdc194a073926bad867f0e82c040063ec7723ae9f93c8dcc8&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=false"
+            ></script>
+          </div>
+          <div class="card contacts-block">
+            <div class="section-title section-title-contacts">Контакты</div>
+            <div class="address contacts-address">
+              Адрес: <br />
+              <span>озеро Байкал</span>
             </div>
-            <div class="map map__big">
-               <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5e1b96a69e5792efdc194a073926bad867f0e82c040063ec7723ae9f93c8dcc8&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script>
+            <div class="phone">
+              <div class="phone-number">+7 (999) 8887766</div>
+              <div class="phone-number">+71112223344</div>
             </div>
-            <div class="card contacts-block">
-               <div class="section-title section-title-contacts">
-                  Контакты
-               </div>
-               <div class="address contacts-address">
-                  Адрес: <br>
-                  <span>озеро Байкал</span>
-               </div>
-               <div class="phone">
-                  <div class="phone-number">
-                     +7 (999) 8887766
-                  </div>
-                  <div class="phone-number">
-                     +71112223344
-                  </div>
-               </div>
-               <div class="social contacts-social">
-                  <a href="viber://chat/?number=%2BphoneNumber">
-                     <div class="social-icon social-icon__viber">
-                        <img src="assets/img/viber-icon.webp" alt="Вайбер">
-                     </div>
-                  </a>
-                  <a href="https://wa.me/71112223344">
-                     <div class="social-icon social-icon__whatsapp">
-                        <img src="assets/img/whatsapp-icon.webp" alt="Ватсап">
-                     </div>
-                  </a>
-               </div>
+            <div class="social contacts-social">
+              <a href="viber://chat/?number=%2BphoneNumber">
+                <div class="social-icon social-icon__viber">
+                  <img src="assets/img/viber-icon.webp" alt="Вайбер" />
+                </div>
+              </a>
+              <a href="https://wa.me/71112223344">
+                <div class="social-icon social-icon__whatsapp">
+                  <img src="assets/img/whatsapp-icon.webp" alt="Ватсап" />
+                </div>
+              </a>
             </div>
-         </div>
+          </div>
+        </div>
       </div>
-   </div>
-   
-   <div class="footer">
-      <div class="container">
-         <div class="footer-wrap">
-            <div class="row footer-row">
-               <div class="footer-block">
-                  <div class="footer-logo">
-                     <img src="assets/img/logo-transp-white.webp" alt="Тёмный логотип">
-                  </div>
-               </div>
-               <div class="footer-block footer-block__hidden">
-                  <div class="card-title footer-block-name">
-                     Навигация
-                  </div>
-                  <div class="footer-navigation">
-                     <ul>
-                        <li class="link footer-link">
-                           <a href="#main" title="Главная">Главная</a>
-                        </li>
-                        <li class="link footer-link">
-                           <a href="#about" title="О гостинице">О гостинице</a>
-                        </li>
-                        <li class="link footer-link">
-                           <a href="#offer" title="Преимущества">Преимущества</a>
-                        </li>
-                        <li class="link footer-link">
-                           <a href="#rooms" title="Номера">Номера</a>
-                        </li>
-                        <li class="link footer-link">
-                           <a href="#feedback" title="Отзывы">Отзывы</a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="footer-block">
-                  <div class="card-title footer-block-name">
-                     Быстрая связь
-                  </div>
-                  <div class="footer-block-buttons">
-                     <button class="button-solid button-solid__narrow button-book">Забронировать</button>
-                     <button class="button-outline button-outline__narrow button-callback">Обратный звонок</button>
-                  </div>
-               </div>
-               <div class="footer-block footer-block-contacts">
-                  <div class="card-title footer-block-name">
-                     Контакты
-                  </div>
-                  <div class="address footer-address">
-                     Адрес: <br>
-                     <span>озеро Байкал</span>
-                  </div>
-                  <div class="phone footer-phone">
-                     <div class="phone-number">
-                        +7 (999) 8887766
-                     </div>
-                     <div class="phone-number">
-                        +71112223344
-                     </div>
-                  </div>
-                  <div class="social footer-social">
-                     <a href="viber://chat/?number=%2BphoneNumber">
-                        <div class="social-icon footer-social-icon social-icon__viber">
-                           <img src="assets/img/viber-icon.webp" alt="Вайбер">
-                        </div>
-                     </a>
-                     <a href="https://wa.me/71112223344">
-                        <div class="social-icon footer-social-icon social-icon__whatsapp">
-                           <img src="assets/img/whatsapp-icon.webp" alt="Ватсап">
-                        </div>
-                     </a>
-                  </div>
-               </div>
-            </div>
-            <div class="row footer-bottom">
-               © Все права защищены.
-            </div>
-         </div>
-      </div>
-   </div>
+    </div>
 
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-   <script src="https://code.jquery.com/jquery-3.6.1.js" crossorigin="anonymous"></script>
-   <script src="scripts/jquery.maskedinput.min.js"></script>
-   <script src="scripts/hamburger-menu.js"></script>
-   <script src="scripts/popups.js"></script>
-   <script src="scripts/ajax.js"></script>
-</body>
+    <div class="footer">
+      <div class="container">
+        <div class="footer-wrap">
+          <div class="row footer-row">
+            <div class="footer-block">
+              <div class="footer-logo">
+                <img
+                  src="assets/img/logo-transp-white.webp"
+                  alt="Тёмный логотип"
+                />
+              </div>
+            </div>
+            <div class="footer-block footer-block__hidden">
+              <div class="card-title footer-block-name">Навигация</div>
+              <div class="footer-navigation">
+                <ul>
+                  <li class="link footer-link">
+                    <a href="#main" title="Главная">Главная</a>
+                  </li>
+                  <li class="link footer-link">
+                    <a href="#about" title="О гостинице">О гостинице</a>
+                  </li>
+                  <li class="link footer-link">
+                    <a href="#offer" title="Преимущества">Преимущества</a>
+                  </li>
+                  <li class="link footer-link">
+                    <a href="#rooms" title="Номера">Номера</a>
+                  </li>
+                  <li class="link footer-link">
+                    <a href="#feedback" title="Отзывы">Отзывы</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-block">
+              <div class="card-title footer-block-name">Быстрая связь</div>
+              <div class="footer-block-buttons">
+                <button class="button-solid button-solid__narrow button-book">
+                  Забронировать
+                </button>
+                <button
+                  class="button-outline button-outline__narrow button-callback"
+                >
+                  Обратный звонок
+                </button>
+              </div>
+            </div>
+            <div class="footer-block footer-block-contacts">
+              <div class="card-title footer-block-name">Контакты</div>
+              <div class="address footer-address">
+                Адрес: <br />
+                <span>озеро Байкал</span>
+              </div>
+              <div class="phone footer-phone">
+                <div class="phone-number">+7 (999) 8887766</div>
+                <div class="phone-number">+71112223344</div>
+              </div>
+              <div class="social footer-social">
+                <a href="viber://chat/?number=%2BphoneNumber">
+                  <div
+                    class="social-icon footer-social-icon social-icon__viber"
+                  >
+                    <img src="assets/img/viber-icon.webp" alt="Вайбер" />
+                  </div>
+                </a>
+                <a href="https://wa.me/71112223344">
+                  <div
+                    class="social-icon footer-social-icon social-icon__whatsapp"
+                  >
+                    <img src="assets/img/whatsapp-icon.webp" alt="Ватсап" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row footer-bottom">© Все права защищены.</div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/jquery.maskedinput.min.js"></script>
+    <script src="scripts/hamburger-menu.js"></script>
+    <script src="scripts/popups.js"></script>
+    <script src="scripts/ajax.js"></script>
+  </body>
 </html>

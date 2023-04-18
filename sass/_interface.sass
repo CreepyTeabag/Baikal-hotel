@@ -138,7 +138,9 @@
       line-height: 17px
 
 .section-title
+   position: relative
    margin-bottom: 30px
+   width: fit-content
    font-family: 'Lora'
    font-style: normal
    font-weight: 700
@@ -149,30 +151,15 @@
    &::before
       content: ''
       margin-bottom: -10px
-      position: relative
-      left: 140px
+      position: absolute
+      right: 0
       display: block
       width: 60px
       height: 7px
       background: url(../assets/img/header-soft-grey-line.webp) right no-repeat
       background-size: contain
-   &-offer
-      &::before
-         left: 193px
-   &-rooms
-      &::before
-         left: 153px
-   &-feedback
-      &::before
-         left: 155px
-   &-popup
-      &::before
-         margin-bottom: -5px
-         left: 135px
    &-contacts
       margin-bottom: 15px
-      &::before
-         left: 95px
 
 .description
    width: 100%
@@ -230,26 +217,11 @@
       flex-direction: row
       justify-content: space-between
       align-items: center
+      
    .section-title
       font-size: 35px
       line-height: 44px
-      &::before
-         left: 173px
-      &-offer
-         &::before
-            left: 235px
-      &-rooms
-         &::before
-            left: 188px
-      &-feedback
-         &::before
-            left: 192px
-      &-popup
-         &::before
-            left: 185px
-      &-contacts
-         &::before
-            left: 120px
+
    .section-img
       min-width: 300px
       max-width: 450px
@@ -316,24 +288,6 @@
    .section-title
       font-size: 45px
       line-height: 52px
-      &::before
-         left: 240px
-      &-offer
-         &::before
-            left: 320px
-      &-rooms
-         &::before
-            left: 258px
-      &-feedback
-         &::before
-            left: 264px
-      &-popup
-         &::before
-            margin-bottom: -5px
-            left: 330px
-      &-contacts
-         &::before
-            left: 170px
 
    .description
       font-size: 16px
@@ -398,26 +352,11 @@
       font-size: 50px
       line-height: 64px
       &::before
-         left: 206px
          width: 130px
          height: 11px
          background: url(../assets/img/line-sharp.webp) right no-repeat
-      &-offer
-         &::before
-            left: 295px
-      &-rooms
-         &::before
-            left: 223px
-      &-feedback
-         &::before
-            left: 229px
-      &-popup
-         &::before
-            left: 355px
       &-contacts
          margin-bottom: 25px
-         &::before
-            left: 130px
 
    .section-img
       max-width: 650px
