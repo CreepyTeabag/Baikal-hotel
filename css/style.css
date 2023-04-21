@@ -1062,6 +1062,8 @@ html {
   transform: translate(-50%, -50%);
   z-index: -10;
   background: rgba(47, 112, 217, 0.1);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
 }
 
 .popup-show {
